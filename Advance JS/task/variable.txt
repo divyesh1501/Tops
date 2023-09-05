@@ -1,0 +1,69 @@
+/*
+-> Want to re-use variable name so which variable declare method should i use
+A: var
+
+------------------------------------------------------------------------------------------
+
+-> give the list which variable name not works in js
+1. let a=0
+2. let "a"=0
+3. let 'a'=0
+4. let `10`=0
+5. let 1=0
+A: 2,3,4,5
+------------------------------------------------------------------------------------------
+
+let x = 100
+var y = 100
+const z = 100
+const m 
+{
+      x= 90
+      y= 90
+      z= 90
+      console.log(x) ___________________ point-x1
+      console.log(y) ___________________ point-y1
+      console.log(z) ___________________ point-z1
+      console.log(m) SyntaxError: Missing initializer in const declaration
+} 
+
+console.log(x) ___________________ point-x2
+console.log(y) ___________________ point-y2
+console.log(z) ___________________ point-z2
+
+what will print at x1- 90
+what will print at y1- 90
+what will print at z1- TypeError: Assignment to constant variable.
+what will print at x2- 90
+what will print at y2- 90
+what will print at z2- TypeError: Assignment to constant variable.
+
+------------------------------------------------------------------------------------------
+
+-> task-2
+
+console.log(x) ___________________ point-x2
+console.log(y) ___________________ point-y2
+console.log(z) ___________________ point-z2
+
+{
+      let x = 100
+      var y = 100
+      const z = 100
+}
+
+console.log(x) ___________________ point-x1
+console.log(y) ___________________ point-y1
+console.log(z) ___________________ point-z1
+
+
+what will print at x1- x is not defined (Error)
+what will print at y1- 100
+what will print at z1- z is not defined (Error)
+what will print at x2- x is not defined (Error)
+what will print at y2- undefined
+what will print at z2- z is not defined (Error)
+
+------------------------------------------------------------------------------------------
+
+*/
