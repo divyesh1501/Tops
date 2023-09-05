@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:  border-box;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .list{
+            background-color: cornflowerblue;
+            text-transform: capitalize;
+        }
+        .list a{
+            color:blue;
+        }
+        .list ul{
+            margin-left: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        .list ul li{
+            padding: 15px;
+        }
+        .list .list-show{
+            position: relative;
+        }
+        .list .list-show .service-list{
+            display: none;
+            position: absolute;
+            text-align: end;
+            padding-right: 10px;
+            top: 40px;
+            left: -15px;
+            background-color: lightblue;
+            height: auto;
+            width: 120px;
+        }    
+        .list .list-show ul li{
+            padding: 5px;      
+        }
+        .list .list-show:hover .service-list{
+            display: block;
+        }      
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="">home</a></li>
+            <li class="list-show"><a href="">service</a>
+            <ul class="service-list">
+                <li><a href="">service 1</a></li>
+                <li><a href="">service 2</a></li>
+            </ul>
+            </li>
+            <li><a href="">blog</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">contact us</a></li>
+        </ul>
+    </div>
+</body>
+</html>

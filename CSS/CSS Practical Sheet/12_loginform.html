@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .flex-value {
+            height: 740px;
+            background-color: lightblue;
+        }
+        .flex-value .div-margin {
+            margin: 0px 280px;
+        }
+        .flex-value .flex-value-p {
+            padding: 100px 0px;
+        }
+        .flex-value .flex-value-p .form{
+            font-size: 30px;
+            padding-left: 400px;
+        }
+        .flex-value .flex-box {
+            display: flex;
+        }
+        .flex-value .flex-box .left-value {
+            padding: 0px 100px;
+            background-color: white;
+            flex: 1;
+        }
+        .flex-value .flex-box .left-value .h1 {
+            padding-left: 95px;
+            padding-top: 100px;
+            padding-bottom: 15px;
+            text-shadow: 2px 2px 15px black;
+        }
+        .flex-value .flex-box .left-value .login {
+            padding-left: 75px;
+            padding-bottom: 30px;
+            color: dimgrey;
+        }
+        .flex-value .flex-box .left-value .username {
+            background-color: lightblue;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 15px;
+            height: 35px;
+            width: 260px;
+            border: none;
+            border-radius: 15px;
+        }
+        .flex-value .flex-box .left-value .password{
+            background-color: lightblue;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 15px;
+            height: 35px;
+            width: 260px;
+            border: none;
+            border-radius: 15px;
+        }
+        .flex-value .flex-box .left-value button {
+            margin-left: 10px;
+            margin-bottom: 30px;
+            height: 35px;
+            width: 260px;
+            border: none;
+            border-radius: 15px;
+            background-color: blue;
+            color: white;
+        }
+        .flex-value .flex-box .left-value .connect {
+            margin-left: 20px;
+            margin-bottom: 40px;
+            color: dimgrey;
+        }
+        .flex-value .flex-box .left-value .account {
+            margin-left: 12px;
+            color: dimgrey;
+        }
+        .flex-value .flex-box .left-value .register {
+            color: orangered;
+        }
+        .flex-value .flex-box .right-value {
+            flex: 1;
+        }
+        .flex-value .flex-box .right-value img{
+            height: 100%;
+            max-width: 480px;    
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex-value">
+        <div class="div-margin">
+            <div class="flex-value-p">
+                <h1 class="form">Login in Form</h1>
+                <div class="flex-box">
+                    <div class="left-value">
+                        <div class="h1">
+                            <h1>Log in</h1>
+                        </div>
+                        <div class="login"><span>To your account</span></div>
+                        <div><input class="username" type="text" placeholder="User Name"></div>
+                        <div><input class="password" type="password" placeholder="Password"></div>
+                        <div class="button"><button type="submit">Log In</button></div>
+                        <div class="connect"><Span>Or connect with social media</Span></div>
+                        <div class="account">Don't have an account?<span class="register">Register</span></div>
+                    </div>
+                    <div class="right-value">
+                        <img src="image/iamge1.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
