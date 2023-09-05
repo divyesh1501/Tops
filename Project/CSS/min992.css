@@ -1,0 +1,166 @@
+@media (min-width:992px) {
+    /* ============ header ============== */
+    header .main .contact{
+        font-size: 15px;
+        gap: 20px;   
+    }
+    /* ========= homepage ============ */
+    .homepage .container-h{
+        margin: 0px 20px;
+    }
+    .homepage .homepage-p{
+        padding: 50px 0px;
+    }
+    .homepage .main .logo .hand {
+        font-size: 20px;
+        padding-left: 133px;
+    }
+    .homepage .main .logo h1{
+        font-size: 30px;
+        padding-top: 16px;
+    }
+    .homepage .main .nav{
+        display: block;
+    }
+    .homepage .main .toglbtn{
+        display: none;
+    }
+    .homepage .main .toglbtn .tbtn i{
+        display: none;
+    }
+    /* ----------- homepage text & grid---------- */
+    .homepage .text{
+        padding-top: 50px;
+        margin: 0px 180px;
+    }
+    .homepage .text h3{
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .homepage .text h1{
+        font-size: 50px;
+        width: 70%;
+        padding-bottom: 40px;
+    }
+    .homepage .gridbox{
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px;
+        padding: 80px 0px;
+        margin: 0px 180px;
+    }
+    /* ===============info section=========== */
+    .info .container-i{
+        margin: 0px 180px;
+    }
+    .info .info-p{
+        padding: 80px 0px;
+    }
+    .info .gridbox{
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* =============== mid-sec================== */
+    .mid-sec .flexbox .left{
+        padding: 100px 80px;
+    }
+    .mid-sec .flexbox .left h1{
+        font-size: 48px;
+        width: 55%;
+        padding-top: 150px;
+    }
+    .mid-sec .flexbox .right{
+        padding: 100px 80px;
+    }
+    /* ================= heroimg============== */
+    .heroimg .support{
+        padding-top: 250px;
+    }
+     .heroimg .support h1{
+        padding-bottom: 10px;
+    }
+    .heroimg .support h3{
+        font-size: 25px;
+    }
+    /* ==================== trust================== */
+    .trust .container-t{
+        margin: 0px 180px;
+    }
+    .trust .trust-p{
+        padding: 80px 0px;
+     }
+     /* ===============about============== */
+    .about .container-a{
+        margin: 0px 180px;
+    }
+    .about .about-p{
+        padding: 80px 0px;
+    }
+    .about .flexbox .text .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* ===============hero-d============ */
+    .hero-d .donate{
+        padding: 80px 0px;
+    }
+    /* ================gallery================ */
+    .gallery .container-g{
+        margin: 0px 180px;
+    }
+    .gallery .gallery-p{
+        padding: 80px 0px;
+    }
+    .gallery .imagebox{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gallery .imagebox .image .info{
+        top: 52%;
+    }
+    /* ===============hiring=============== */
+    .hiring .container-hr{
+        margin: 0px 180px;
+    }
+    .hiring .hiring-p{
+        padding: 80px 0px;
+    }
+    .hiring .talent{
+        flex-direction: row;
+    }
+    .hiring .talent .right-t{
+        text-align: end;
+    }
+    /* ==============user============= */
+    .user .container-u{
+        margin: 0px 180px;
+    }
+    .user .user-p{
+        padding: 80px 0px;
+    }
+    .user .customer{
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .user .customer .cust img{
+        top: -13%;
+    }
+    .user .customer .cust3{
+        margin-top: 0px;
+    }
+    /* ==============footer============= */
+    footer .top-f .contact{
+        grid-template-columns: repeat(4,1fr);
+    }
+    /* ----------------sub footer---------- */
+    footer .sub-footer .s-footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer .sub-footer .s-footer .social{
+        justify-self: start;
+    }
+    footer .sub-footer .s-footer .copy{
+        padding-top: 0px;
+        text-align: end;
+    }
+    /* =============== up button================= */
+    .upbtn button{
+       display: block;
+    }
+    }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Marksheet for Information Technology</h1>
+        <div class="box">
+            <h5>Enter Marks</h5>
+            <form action="#">
+                <div class="row">
+                    <div class="col"><label for="">1. C Language</label></div>
+                    <div class="col"><input type="text" id="sub1"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="">2. C++ Language</label></div>
+                    <div class="col"><input type="text" id="sub2"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="">3. Database</label></div>
+                    <div class="col"><input type="text" id="sub3"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="">4. HTML</label></div>
+                    <div class="col"><input type="text" id="sub4"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="">5. CSS</label></div>
+                    <div class="col"><input type="text" id="sub5"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="">6. php</label></div>
+                    <div class="col"><input type="text" id="sub6"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="">7. Core java </label></div>
+                    <div class="col"><input type="text" id="sub7"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"><button id="btn" onclick="return mark()">Result</button></div>
+                </div>
+            </form>
+            <div class="result">
+                <div class="res">Total is:
+                    <span id="msg1"></span>/350
+                </div>
+                <div class="res">Percentage is:
+                    <span id="msg2"></span>%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

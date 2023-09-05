@@ -1,0 +1,24 @@
+Assignment: JQuery Basic, Effects & Advance
+
+Q: What is JQuery? 
+A: jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website.
+   jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+Q: How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, JQuery Animation? 
+A: The css() method sets or returns one or more style properties for the selected elements.
+   Syntax:-  css("propertyname");
+
+  -addClass() - Adds one or more classes to the selected elements
+  -removeClass() - Removes one or more classes from the selected elements
+  -toggleClass() - Toggles between adding/removing classes from the selected elements
+
+  -The jQuery animate() method is used to create custom animations.
+   Syntax:- $(selector).animate({params},speed,callback);
+
+
+Q: How to create slider with animation?
+A: Using jQuery slideToggle() Method:
+  -The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+  -If the elements have been slid down, slideToggle() will slide them up.
+  -If the elements have been slid up, slideToggle() will slide them down.
+   Syntax:- $(selector).slideToggle(speed,callback);

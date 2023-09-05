@@ -1,0 +1,36 @@
+.main{
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+}
+h1{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+input{
+    height: 15px;
+    width: 250px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+button{
+    height: 25px;
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+    cursor: pointer;
+}
+span{
+    color: red;
+}

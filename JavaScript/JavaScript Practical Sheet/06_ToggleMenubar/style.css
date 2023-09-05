@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: whitesmoke;
+}
+header{
+    position: fixed;
+    background-color: #484444be;
+    width: 100%;
+    transition: 1s ease-in-out all;
+}
+header .container{
+    margin: 0px 30px;
+}
+header .header-p{
+    padding: 30px 0px;
+}
+header .flexbox{
+    display: flex;
+    align-items: center;
+}
+header .flexbox .logo{
+    flex: 0.5;
+    cursor: pointer;
+    font-size: 22px;
+}
+header .flexbox .logo span{
+    margin-right: 10px;
+}
+header .flexbox .navbar{
+    flex: 3;
+    transition: 1s ease-in-out all;
+}
+header .flexbox .navbar ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;    
+}
+header .flexbox .navbar ul li a{
+    color: white;
+    font-size: 22px;
+}
+header .flexbox .navbar .closebtn{
+    display: none;
+    text-align: center;
+    margin: 20px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+header .flexbox .btn{
+    text-align: end;
+    position: relative;
+}
+header .flexbox .btn .tbtn{
+    display: none;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section1 {
+    padding: 80px 0px;
+}
+.section1 p{
+    font-size: 18px;
+    padding: 30px 50px;
+}
+/* ================= random class =============== */
+header .flexbox .nav-bar{
+    display: none;
+    background-color: #484444be;
+    position: fixed;
+    height: 100%;
+    top: 90px;
+    right: 0;
+    width: 250px;
+    transition: 1s ease-in-out all;
+}
+header .flexbox .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    gap: 15px;
+    text-align: center;
+}
+
+/* ================= media query ================= */
+@media (max-width:992px) {
+header .flexbox .logo{
+    flex: 15;
+}
+header .flexbox .navbar{
+    display: none;
+}
+header .flexbox .btn .tbtn{
+    display: block;
+    flex: 1;
+}
+header .flexbox .nav-bar{
+    display: block;
+}
+header .flexbox .navbar .closebtn{
+    display: block;
+}
+}

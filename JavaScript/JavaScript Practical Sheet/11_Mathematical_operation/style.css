@@ -1,0 +1,32 @@
+.main{
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+}
+h5{
+    font-size: 18px;
+    text-align: center;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    align-items: center;
+}
+.col1{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    gap: 20px;
+}
+button{
+    height: 25px;
+    width: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+span{
+    color: blue;
+}

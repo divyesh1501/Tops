@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.color{
+    margin: 100px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.set{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#color{
+    width: 70px;
+}
+#btn{
+    width: 70px;
+}
+.colorbox{
+    height: 250px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}

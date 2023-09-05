@@ -1,0 +1,89 @@
+/* ============ common css ============ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ============= header ================= */
+.container{
+    margin: 0px 50px;
+}
+.header-p{
+    padding: 10px 0px;
+}
+header{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 1s ease-out all;
+}
+.btn .fa-bars{
+    color: #2100f4;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* ============== section 1 ============= */
+.section1 .image img{
+    height: 860px;
+    max-width: 100%;
+}
+/* ================== navbar =============== */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #2100f49c;
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    transition: 1s ease-in-out all;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.navbar ul li{
+    text-align: start;
+    padding: 10px;
+    margin-left: 10px;
+}
+.navbar ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.navbar .cbtn{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+.navbar .cbtn .closebtn{
+    color: white;
+    background-color: transparent;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* ============== random--class=================== */
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2100f49c;
+    height: 100%;
+    width: 250px;
+    transition: 1s ease-in-out all;
+}

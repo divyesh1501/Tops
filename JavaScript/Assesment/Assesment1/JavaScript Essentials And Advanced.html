@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .todo{
+            height: auto;
+            width: 400px;
+            background-color: #0f0f27;
+            margin: 50px auto;
+            padding: 50px;
+            border: none;
+            border-radius: 5px;
+        }
+        input{
+            height: 45px;
+            width: 200px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+            outline: none;
+        }
+        button{
+            height: 45px;
+            width: 90px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            background-color: #e7a96a;
+            font-size: 18px;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            background-color: white;
+            margin-top: 20px;
+            border: none;
+             border-radius: 5px;
+        }
+        li{
+            padding-left: 10px;
+            font-size: 18px;
+        }
+        li::after{
+        margin: 10px 0px;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #80808091;
+        display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo">
+        <input type="text" name="" id="todoInput" placeholder="add new">
+        <button id="addTodoButton"> Add </button>
+        <ul id="todoList"></ul>
+    </div>
+    <script>
+        // get refernces to HTML elemts
+        const todoInput = document.getElementById("todoInput");
+        const todoList = document.getElementById("todoList");
+
+        // Function to add a new todo item
+        function addTodo() {
+            // get the value from the input
+            const newTodo = todoInput.value;
+
+            // create a new list item
+            const listItem = document.createElement("li");
+            listItem.textContent = newTodo;
+
+            // append the new list item to the todo list
+            todoList.appendChild(listItem);
+
+            // clear the input
+            todoInput.value = "";
+        }
+            // addEventListener to the button
+            addTodoButton.addEventListener("click", addTodo);
+
+    </script>
+</body>
+</html>

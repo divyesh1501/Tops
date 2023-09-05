@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin: 50px;
+    padding: 50px;
+}
+.grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-content: cetner;
+    text-align: center;
+    align-items: center;
+    place-content: cetner;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center; */
+    /* margin: auto; */
+    background: #a8a8c5;
+}
+#count1,#count2,#count3,#count4{
+    /* position: absolute; */
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    padding: 95px;
+    /* align-items: center;
+    place-content: cetner;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center; */
+    /* margin: auto 50px; */
+    font-size: 50px;
+    color: blueviolet;
+}

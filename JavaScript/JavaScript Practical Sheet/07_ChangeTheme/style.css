@@ -1,0 +1,104 @@
+/* ============ common css ============ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ============= header ================= */
+.container{
+    margin: 0px 50px;
+}
+.header-p{
+    padding: 10px 0px;
+}
+header{
+    background-color: #e8c8c8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header-f{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+header .header-f .logo{
+    flex: 0.5;
+    color: #9a9a9a;
+    cursor: pointer;
+}
+header .header-f .logo h1 span{
+    color:  #9a9a9a;
+}
+header .header-f .theme{
+    flex: 0.5;
+    display: flex;
+    gap: 15px;
+    color: #9a9a9a;
+    align-items: center;
+    justify-content: end;   
+}
+header .header-f .theme div i{
+   font-size: 20px;
+   cursor: pointer;
+}
+header .header-f .theme .tbtn{
+    color: #9a9a9a;
+    background-color: transparent;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border: 2px solid #9a9a9a;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* ============== section 1 ============= */
+.section1{
+    background-color: whitesmoke;
+    color: rgb(15, 15, 15);
+}
+.section1 .container{
+    margin: 0px 180px;
+}
+.section1 .section1-p{
+    padding: 180px 0px;
+}
+.section1 .info h3{
+   padding: 30px 0px;
+}
+/* ================== navbar =============== */
+.navbar{
+    flex: 1;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul li{
+    padding: 10px;
+}
+.navbar ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+/* ============== random--class=================== */
+.darkmode{
+    background: url(image/apple.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.header-fix {
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
