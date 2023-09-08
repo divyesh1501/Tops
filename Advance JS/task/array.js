@@ -19,7 +19,7 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
             console.log("Element print by foreach :",e)
         })
 
-//  3. change a value of 6th index with 100
+// 3. change a value of 6th index with 100
 
         arr[6] = 100;
         console.log(arr)
@@ -97,6 +97,100 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         console.log(arr)
 
 // 13. reverce an array with use of for-loop
+        let rev_array = []
+        for (let i = arr.length - 1; i >= 0; i--) {
+
+        rev_array.push(arr[i]);
+
+        }
+        console.log("reverce array:", rev_array)
+// ___________________________________________________________________________________
+
+// task-2
+let arr1 = [1,2,3,6,7,9,3,56,8]
+
+// 1. give all value which can devided by 2 - not use filter
+
+        result = []
+
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] % 2 === 0) {
+                result.push(arr1[i]);
+            }
+        }
+        console.log("value which can devided by 2:", result);
+
+// 2. give all value above 3 by use of filter
+
+        let farr = arr1.filter((e) =>{
+            return e > 3
+        } )
+        console.log("all value above 3:", farr)
+
+// 3. give index of 56
+
+        let findex = arr1.findIndex((e) => {
+            return e === 56
+        })
+        console.log("index of 56:", findex)
+
+// 4. give true/false result when check given value is exists in array or not      
+        
+        let incarr = arr1.includes(1)
+        console.log("true/false:", incarr)
         
 
+// ___________________________________________________________________________________
 
+// task-3
+
+        let namearr = ['i', 'am', 'urvish'];
+
+// 1. ['i','am', 'urvish'] ==> want ['urvish','am','i']
+
+    // by Map
+        let reversedarr = namearr.map((value, index, namearr) =>{
+        return namearr[namearr.length - 1 - index];
+        });
+        console.log("by Map:", reversedarr);
+        
+    // by loop
+        let reversedarr1 = [];
+
+        for (let i = namearr.length - 1; i >= 0; i--) {
+        reversedarr1.push(namearr[i]);
+    }
+        console.log("by loop:", reversedarr1)
+
+
+// 2. want "i am urvish" without use join method
+
+    // by loop
+        let result = "";
+
+        for (let i = 0; i < namearr.length; i++) {
+        result += namearr[i];
+        if (i < namearr.length - 1) {
+            result += " ";
+        }
+        }
+        console.log("Using a Loop:", result);
+
+// ___________________________________________________________________________________
+
+// task-4
+let namearr1 = ['i', 'am', 'urvish']
+
+// // ['i','am', 'urvish'] ==> want ['hsivru','ma','i']
+
+// // by use of loop
+
+let res = [];
+
+for (let i = 0; i < namearr1.length; i++) {
+    let a = namearr1[i].split("")
+    a.reverse()
+    a = a.join("")
+    res.unshift(a);
+}
+console.log("===>:", res)
