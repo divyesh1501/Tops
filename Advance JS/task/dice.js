@@ -5,4 +5,12 @@ function dicewithloop() {
     }
 }
 let dice = dicewithloop()
-console.log("num:", dice)
+console.log("num :", dice)
+
+
+-----------------------------------------------------------------
+    function dice() {
+    let x = Math.trunc(Math.random() * 6) + 1
+    console.log("dice num :", x)
+}
+dice()
