@@ -22,10 +22,11 @@ function App() {
     {/* <CurdTask /> */}
     {/* <FullCurd /> */}
     {/* <IncDec /> */}
-    {/* <ListView /> */}
-    <NonIdiomaticList />
+    <ListView  />
     </>
   )
 }
 
 export default App
+
+
