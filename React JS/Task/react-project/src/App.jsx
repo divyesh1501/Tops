@@ -10,23 +10,24 @@ import CurdTask from './task/CurdTask'
 import FullCurd from './task/FullCurd'
 import IncDec from './task/IncDec'
 import ListView from './task/ListView'
+import MainHomePage from './style-component/MainHomepage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <ProductTable /> */}
-    {/* <DataTable /> */}
-    {/* <WebPage /> */}
-    {/* <CurdTask /> */}
-    {/* <FullCurd /> */}
-    {/* <IncDec /> */}
-    <ListView  />
+      {/* <ProductTable /> */}
+      {/* <DataTable /> */}
+      {/* <WebPage /> */}
+      {/* <CurdTask /> */}
+      {/* <FullCurd /> */}
+      {/* <IncDec /> */}
+      {/* <ListView /> */}
+      {/* <NonIdiomaticList /> */}
+      <MainHomePage />
     </>
   )
 }
 
 export default App
-
-

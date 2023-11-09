@@ -1,4 +1,4 @@
-import { BadgeMinus, FileEdit } from 'lucide-react';
+import { BadgeMinus, Eye, FileEdit } from 'lucide-react';
 import React, { useEffect, useState } from 'react'
 import { Button, Form, FormGroup, Input, Label, Table } from 'reactstrap'
 
@@ -12,6 +12,7 @@ export default function FullCurd() {
     });
     let [index, setIndex] = useState(null)
     let [updatemode, setUpdateMode] = useState(false)
+    let [showIndex, setShowIndex] = useState([]);
     const [userArr, setUserArr] = useState([]);
 
 
@@ -89,6 +90,16 @@ export default function FullCurd() {
             }
         }
     }
+
+    // showPassHandler
+    const showPassHandler = (i) => {
+        if (showIndex.includes(i)){
+            setShowIndex(showIndex.filter((index) => index !== i));
+        }else {
+            setShowIndex([...showIndex, i])
+        }
+    }
+
     return (
         <>
             <br />
@@ -174,6 +185,7 @@ export default function FullCurd() {
                             <th>Password</th>
                             <th>Action</th>
                             <th>Remove</th>
+                            <th>Show Password</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -186,7 +198,7 @@ export default function FullCurd() {
                                         <td>{e?.lastname} </td>
                                         <td>{e?.contact} </td>
                                         <td>{e?.email} </td>
-                                        <td>{e?.password} </td>
+                                        <td>{showIndex.includes(i) ? e.password: "********"} </td>
                                         <td>
                                             <FileEdit
                                                 role="button"
@@ -198,6 +210,13 @@ export default function FullCurd() {
                                                 color="#ff0000"
                                                 role="button"
                                                 onClick={() => removeHandler(i)}
+                                            />
+                                        </td>
+                                        <td>
+                                            <Eye
+                                                color="#f50000"
+                                                role="button"
+                                                onClick={() => showPassHandler(i)}
                                             />
                                         </td>
                                     </tr>
