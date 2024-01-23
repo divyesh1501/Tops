@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+    padding: 0px 50px;
+    min-height: 70px;
+    border-radius: 0px 35px 0px 35px;
+    background-color: #42a1e994;
+}
+
+.menu__nav {
+    display: flex;
+    gap: 10px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.menu__nav a:hover {
+    font-weight: 500;
+
+}
+
+.active {
+    font-weight: 600;
+}
+
