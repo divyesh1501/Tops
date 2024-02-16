@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Col, FormGroup, Input, Label, Table } from 'reactstrap';
 
-export const UserList = () => {
+export const UserList = ({creartaccount}) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedType, setSelectedType] = useState('all'); // 'all', 'admin', 'employee'
+  const [selectedType, setSelectedType] = useState('all'); // 'all', 'admin', 'employee' , 'user'
   const [allUsers, setAllUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
 
@@ -65,7 +65,7 @@ export const UserList = () => {
       </div>
 
       <div className='d-flex flex-column' style={{marginLeft:"100px"}}>
-        <div>
+        <div className='d-flex gap-3 ' style={{marginLeft:"108px"}}> 
           <Input
             type="text"
             placeholder="Search by username"
@@ -73,10 +73,10 @@ export const UserList = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ width: "60vw" }}
           />
-          {/* <Button onClick={handleSearch}>Search</Button> */}
+          <Button onClick={creartaccount} >Add User</Button>
         </div>
         <div>
-          <Table striped style={{ width: "60vw" }}>
+          <Table striped style={{ width: "60vw", marginLeft:"108px" }}>
             <thead>
               <tr>
                 <th>Sr.No</th>

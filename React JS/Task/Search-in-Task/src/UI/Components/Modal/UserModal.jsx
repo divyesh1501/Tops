@@ -21,6 +21,11 @@ export default function UserModal({ modal, toggle, logtoggle }) {
         text: "Please fill all input fields!",
       });
       return false;
+    } if (data.userName === data.userName) {
+      Swal.fire({
+        icon: 'warning',
+        text: 'User Name is already exists..!!'
+      })
     }
     else {
       let oldData = localStorage.getItem('userData')
@@ -39,7 +44,7 @@ export default function UserModal({ modal, toggle, logtoggle }) {
   const signInAccount = () => {
     toggle()
     logtoggle()
-}
+  }
 
   return (
     <div>
@@ -100,8 +105,8 @@ export default function UserModal({ modal, toggle, logtoggle }) {
                 </option>
               </Input>
             </FormGroup>
-            <p>Already have an account! <span role='button' onClick={signInAccount} style={{color:"Blue"} }>Click Here!</span></p>
-            
+            <p>Already have an account! <span role='button' onClick={signInAccount} style={{ color: "Blue" }}>Click Here!</span></p>
+
           </Form>
         </ModalBody>
         <ModalFooter>

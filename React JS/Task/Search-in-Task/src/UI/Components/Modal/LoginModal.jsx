@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
-import { Header } from '../Header/Header';
 import Swal from 'sweetalert2'
-import { resolvePath } from 'react-router';
+import UserModal from './UserModal';
+import { UserList } from '../../Pages/UserList';
 
 const intialData = {
     userName: "",
@@ -82,7 +82,7 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
                     </Button>
                 </ModalFooter>
             </Modal>
-
+        {/* <UserList creartaccount={creartaccount}/> */}
         </div>
     );
 }

@@ -6,6 +6,7 @@ import UserModal from '../Modal/UserModal';
 import One5 from '../../Images/One5Logo.png';
 import LoginModal from '../Modal/LoginModal';
 import Swal from 'sweetalert2';
+import { UserList } from '../../Pages/UserList';
 
 export const Header = () => {
     const [regmodal, setRegModal] = useState(false);
@@ -63,6 +64,7 @@ export const Header = () => {
 
             <UserModal modal={regmodal} toggle={regtoggle} logtoggle={logtoggle} />
             <LoginModal modal={logmodal} toggle={logtoggle} regtoggle={regtoggle} />
+            {/* <UserList modal={regmodal} toggle={regtoggle} /> */}
         </>
     );
 };
