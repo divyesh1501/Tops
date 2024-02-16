@@ -15,36 +15,22 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
         toggle()
         regtoggle()
     }
-    
-    const newUserAdded = (newUserData) => {
-        setAllUsers(newUserData);
-      };
-    
+
 
     let [loginData, setLoginData] = useState(intialData);
 
     let loginUser = () => {
-
-        if (loginData.userName == loginData.password) {
+        let getData = JSON.parse(localStorage.getItem("userData")) || []
+        let findGetData = getData.find((e) => e.userName === loginData.userName && e.password === loginData.password)
+        if (findGetData) {
+            localStorage.setItem("loginData", JSON.stringify(findGetData))
             toggle()
             setLoginData(intialData)
-        //     Swal.fire({
-        //         icon: "warning",
-        //         title: "Oops...",
-        //         text: "Please fill all input fiels!",
-        //     });
-        //     return false;
-        // }
-        // else {
-        //     let oldData = localStorage.getItem('userData')
-        //     let convertedOldData = JSON.parse(oldData || "[]")
-        //     console.log("🚀 ~ registUser ~ convertedOldData:", convertedOldData)
-        //     const finalData = [...convertedOldData, data]
-
-        //     localStorage.setItem("userData", JSON.stringify(finalData))
-        //     toggle()
-        //     setLoginData(intialData)
-        //     window.location.reload();
+            Swal.fire({
+                icon: "success",
+                text: "Login successfully..!!",
+            });
+            return false;
         }
     }
 
@@ -52,7 +38,7 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
         <div>
 
             <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Register Form</ModalHeader>
+                <ModalHeader toggle={toggle}>Sign In User</ModalHeader>
                 <ModalBody>
                     <Form>
                         <FormGroup>
@@ -82,11 +68,11 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
 
                             />
                         </FormGroup>
-                        <p>Don't have a account Creat account <span role='button' onClick={creartaccount} style={{color:"Blue"} }>Click Here!</span></p>
+                        <p>Don't have a account Creat account <span role='button' onClick={creartaccount} style={{ color: "Blue" }}>Click Here!</span></p>
 
                     </Form>
                 </ModalBody>
-                
+
                 <ModalFooter>
                     <Button color="primary" onClick={loginUser}>
                         SignIn

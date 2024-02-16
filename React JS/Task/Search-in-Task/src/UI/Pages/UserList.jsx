@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Col, FormGroup, Input, Label, Table } from 'reactstrap';
-import UserModal from '../Components/Modal/UserModal';
 
 export const UserList = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -32,11 +31,6 @@ export const UserList = () => {
   const handleTypeChange = (event) => {
     setSelectedType(event.target.value);
     setSearchTerm(''); // Reset search term when changing user type
-  };
-
-
-  const newUserAdded = (newUserData) => {
-    setAllUsers(newUserData);
   };
 
 
@@ -92,18 +86,17 @@ export const UserList = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredUsers.map((user, index) => (
-                <tr key={index}>
-                  <td>{index + 1}</td>
-                  <td>{user.userName}</td>
-                  <td>{user.password}</td>
-                  <td>{user.userType}</td>
+              {filteredUsers.map((e, i) => (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{e.userName}</td>
+                  <td>{e.password}</td>
+                  <td>{e.userType}</td>
                 </tr>
               ))}
             </tbody>
           </Table>
         </div>
-        <UserModal newUserAdded={newUserAdded} />
 
       </div>
     </div>

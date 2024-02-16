@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
-import { Header } from '../Header/Header';
 import Swal from 'sweetalert2'
 
 const intialData = {
@@ -19,7 +18,7 @@ export default function UserModal({ modal, toggle, logtoggle }) {
       Swal.fire({
         icon: "warning",
         title: "Oops...",
-        text: "Please fill all input fiels!",
+        text: "Please fill all input fields!",
       });
       return false;
     }
@@ -115,7 +114,6 @@ export default function UserModal({ modal, toggle, logtoggle }) {
         </ModalFooter>
       </Modal>
 
-      {/* <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
     </div>
   );
 }
