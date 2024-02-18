@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Col, FormGroup, Input, Label, Table } from 'reactstrap';
 
-export const UserList = ({creartaccount}) => {
+export const UserList = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedType, setSelectedType] = useState('all'); // 'all', 'admin', 'employee' , 'user'
   const [allUsers, setAllUsers] = useState([]);
@@ -73,7 +73,7 @@ export const UserList = ({creartaccount}) => {
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ width: "60vw" }}
           />
-          <Button onClick={creartaccount} >Add User</Button>
+          {/* <Button onClick={creartaccount} >Add User</Button> */}
         </div>
         <div>
           <Table striped style={{ width: "60vw", marginLeft:"108px" }}>

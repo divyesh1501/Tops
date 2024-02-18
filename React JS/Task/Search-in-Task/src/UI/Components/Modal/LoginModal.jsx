@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import Swal from 'sweetalert2'
 import UserModal from './UserModal';
-import { UserList } from '../../Pages/UserList';
 
 const intialData = {
     userName: "",
@@ -82,7 +81,6 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
                     </Button>
                 </ModalFooter>
             </Modal>
-        {/* <UserList creartaccount={creartaccount}/> */}
         </div>
     );
 }

@@ -5,6 +5,7 @@ import { HomePage } from "../UI/Pages/HomePage";
 import { About } from "../UI/Pages/About";
 import { UserList } from '../UI/Pages/UserList';
 import { AdminProtectedRouter } from './ProtectedRouter';
+import Footer from '../UI/Components/Footer/Footer';
 
 export default function Router() {
     return (
@@ -16,7 +17,7 @@ export default function Router() {
                     <Route path='/about' element={<About />} />
                     <Route path='/userlist' element={<AdminProtectedRouter Component={<UserList />} />} />
                 </Routes>
-                {/* <Footer /> */}
+                <Footer />
             </BrowserRouter>
         </>
     )

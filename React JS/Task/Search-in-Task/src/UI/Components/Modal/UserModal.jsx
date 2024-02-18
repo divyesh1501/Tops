@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 const intialData = {
   userName: "",
   password: "",
+  cpassword: "",
   userType: ""
 }
 
@@ -14,18 +15,24 @@ export default function UserModal({ modal, toggle, logtoggle }) {
 
   let registUser = () => {
 
-    if (!data.userName || !data.password || !data.userType) {
+    if (!data.userName || !data.password || !data.cpassword || !data.userType) {
       Swal.fire({
         icon: "warning",
         title: "Oops...",
         text: "Please fill all input fields!",
       });
       return false;
-    } if (data.userName === data.userName) {
+    }
+    if (data.userName === data.userName) {
       Swal.fire({
         icon: 'warning',
         text: 'User Name is already exists..!!'
       })
+      setData(intialData)
+
+    }
+    if (data.password !== data.cpassword) {
+      window.alert("password dose nott match")
     }
     else {
       let oldData = localStorage.getItem('userData')
@@ -77,6 +84,20 @@ export default function UserModal({ modal, toggle, logtoggle }) {
                 placeholder="Enetr password"
                 type="password"
                 onChange={(e) => { setData({ ...data, password: e.target.value }) }}
+
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="examplePassword">
+                Confirm Password
+              </Label>
+              <Input
+                id="cassword"
+                value={data.cpassword}
+                name="cpassword"
+                placeholder="Enetr Confirm password"
+                type="password"
+                onChange={(e) => { setData({ ...data, cpassword: e.target.value }) }}
 
               />
             </FormGroup>
