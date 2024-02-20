@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import Swal from 'sweetalert2'
-import UserModal from './UserModal';
+import AddModal from './AddModal';
 
 const intialData = {
     userName: "",

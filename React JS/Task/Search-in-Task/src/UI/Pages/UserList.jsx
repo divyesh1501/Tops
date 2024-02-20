@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Col, FormGroup, Input, Label, Table } from 'reactstrap';
+import Select from "react-select";
 
-export const UserList = () => {
+export const UserList = ({ modal, toggle, regtoggle }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedType, setSelectedType] = useState('all'); // 'all', 'admin', 'employee' , 'user'
+  const [selectedTypes, setSelectedTypes] = useState(['all']); // 'all' is initially selected
+
   const [allUsers, setAllUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
+
+
+
+  const options = [
+    { value: 'all', label: 'All' },
+    { value: 'admin', label: 'Admin' },
+    { value: 'employee', label: 'Employee' },
+    { value: 'user', label: 'User' }
+  ];
+
 
   useEffect(() => {
     // Fetch user list from localStorage on component mount
@@ -14,58 +26,59 @@ export const UserList = () => {
     setFilteredUsers(storedUsers);
   }, []);
 
-
   useEffect(() => {
     let filtered;
 
-    if (selectedType === 'all') {
+    if (selectedTypes.includes('all')) {
       filtered = allUsers.filter(user => user.userName.toLowerCase().includes(searchTerm.toLowerCase()));
     } else {
-      filtered = allUsers.filter(user => user.userType.toLowerCase() === selectedType && user.userName.toLowerCase().includes(searchTerm.toLowerCase()));
+      filtered = allUsers.filter(user => selectedTypes.includes(user.userType.toLowerCase()) && user.userName.toLowerCase().includes(searchTerm.toLowerCase()));
     }
 
     setFilteredUsers(filtered);
 
-  }, [searchTerm, selectedType, allUsers])
+  }, [searchTerm, selectedTypes, allUsers]);
 
-  const handleTypeChange = (event) => {
-    setSelectedType(event.target.value);
-    setSearchTerm(''); // Reset search term when changing user type
+  const handleTypeChange = (selected) => {
+    const selectedValues = selected ? selected.map(option => option.value) : [];
+    setSelectedTypes(selectedValues.length > 0 ? selectedValues : ['all']);
+    setSearchTerm('');
   };
+
+  const addUser = () => {
+    toggle
+    regtoggle()
+  }
 
 
   return (
     <div className='userTable d-flex align-items-center flex-column mt-3 '>
-
       <div>
         <FormGroup row>
-          <Label
-            for="exampleSelect"
-            sm={1}
-            style={{ width: "100px" }}
-          >
-            User Type:
-          </Label>
-          <Col sm={10}>
-            <Input
-              id="exampleSelect"
-              name="select"
-              type="select"
-              value={selectedType}
-              onChange={handleTypeChange}
-              style={{ width: "60vw" }}
+          <div className='d-flex'style={{width:"65.5vw", marginLeft:"165px", boxShadow:"none"}} >
+            <Label
+              for="exampleSelect"
+              sm={1}
+              style={{ width: "100px" }}
             >
-              <option value="all">All</option>
-              <option value="admin">Admin</option>
-              <option value="employee">Employee</option>
-              <option value="user">User</option>
-            </Input>
-          </Col>
+              User Type:
+            </Label>
+            <Col sm={10}>
+              <Select
+                id="exampleSelect"
+                name="select"
+                value={options.filter(option => selectedTypes.includes(option.value))}
+                options={options}
+                isMulti
+                onChange={(selected) => handleTypeChange(selected)}
+              />
+            </Col>
+          </div>
         </FormGroup>
       </div>
 
-      <div className='d-flex flex-column' style={{marginLeft:"100px"}}>
-        <div className='d-flex gap-3 ' style={{marginLeft:"108px"}}> 
+      <div className='d-flex flex-column' style={{ marginLeft: "100px" }}>
+        <div className='d-flex gap-3 ' style={{ marginLeft: "108px" }}>
           <Input
             type="text"
             placeholder="Search by username"
@@ -73,10 +86,10 @@ export const UserList = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ width: "60vw" }}
           />
-          {/* <Button onClick={creartaccount} >Add User</Button> */}
+          <Button onClick={addUser} >Add User</Button>
         </div>
         <div>
-          <Table striped style={{ width: "60vw", marginLeft:"108px" }}>
+          <Table striped style={{ width: "60vw", marginLeft: "108px" }}>
             <thead>
               <tr>
                 <th>Sr.No</th>
@@ -99,7 +112,7 @@ export const UserList = () => {
         </div>
 
       </div>
-    </div>
+    </div >
 
   );
 

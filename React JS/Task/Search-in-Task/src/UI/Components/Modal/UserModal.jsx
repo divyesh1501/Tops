@@ -6,7 +6,7 @@ const intialData = {
   userName: "",
   password: "",
   cpassword: "",
-  userType: ""
+  userType: "User"
 }
 
 export default function UserModal({ modal, toggle, logtoggle }) {
@@ -21,31 +21,37 @@ export default function UserModal({ modal, toggle, logtoggle }) {
         title: "Oops...",
         text: "Please fill all input fields!",
       });
+      setData(intialData)
       return false;
     }
-    if (data.userName === data.userName) {
-      Swal.fire({
-        icon: 'warning',
-        text: 'User Name is already exists..!!'
-      })
-      setData(intialData)
+    // else if (user.userName === data.userName) {
+    //   Swal.fire({
+    //     icon: 'warning',
+    //     text: 'User Name is already exists..!!'
+    //   })
+    //   setData(intialData)
 
-    }
-    if (data.password !== data.cpassword) {
-      window.alert("password dose nott match")
-    }
+    // }
+    // else if (data.password !== data.cpassword) {
+    //   window.alert("password dose not match")
+    // }
     else {
       let oldData = localStorage.getItem('userData')
       let convertedOldData = JSON.parse(oldData || "[]")
-      console.log("🚀 ~ registUser ~ convertedOldData:", convertedOldData)
+      // console.log("🚀 ~ registUser ~ convertedOldData:", convertedOldData)
       const finalData = [...convertedOldData, data]
-
+      
       localStorage.setItem("userData", JSON.stringify(finalData))
       localStorage.setItem("loginData", JSON.stringify(data))
       toggle()
       setData(intialData)
       window.location.reload();
     }
+  }
+
+  const cancelForm = () => {
+    toggle()
+    setData(intialData)
   }
 
   const signInAccount = () => {
@@ -113,16 +119,13 @@ export default function UserModal({ modal, toggle, logtoggle }) {
 
               >
                 <option>
-                  ---select---
+                  User
                 </option>
                 <option>
                   Admin
                 </option>
                 <option>
                   Employee
-                </option>
-                <option>
-                  User
                 </option>
               </Input>
             </FormGroup>
@@ -134,7 +137,7 @@ export default function UserModal({ modal, toggle, logtoggle }) {
           <Button color="primary" onClick={registUser}>
             Register User
           </Button>{' '}
-          <Button color="secondary" onClick={toggle}>
+          <Button color="secondary" onClick={cancelForm}>
             Cancel
           </Button>
         </ModalFooter>

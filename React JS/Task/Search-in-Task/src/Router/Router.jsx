@@ -6,8 +6,10 @@ import { About } from "../UI/Pages/About";
 import { UserList } from '../UI/Pages/UserList';
 import { AdminProtectedRouter } from './ProtectedRouter';
 import Footer from '../UI/Components/Footer/Footer';
+import { Button } from 'reactstrap';
 
-export default function Router() {
+export default function Router({profiletoggle}) {
+  
     return (
         <>
             <BrowserRouter>

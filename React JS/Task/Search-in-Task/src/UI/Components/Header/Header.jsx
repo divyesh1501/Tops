@@ -6,12 +6,18 @@ import UserModal from '../Modal/UserModal';
 import One5 from '../../Images/One5Logo.png';
 import LoginModal from '../Modal/LoginModal';
 import Swal from 'sweetalert2';
+import AddModal from '../Modal/AddModal';
+import { CircleUser } from "lucide-react";
+import ProfileModal from '../Modal/ProfileModal';
 
 export const Header = () => {
     const [regmodal, setRegModal] = useState(false);
     const [logmodal, setLogModal] = useState(false);
+    const [profilemodal, setProfileModal] = useState(false);
     const regtoggle = () => setRegModal(!regmodal);
     const logtoggle = () => setLogModal(!logmodal);
+    const profiletoggle = () => setProfileModal(!profilemodal);
+
 
     let navigate = useNavigate()
 
@@ -25,9 +31,17 @@ export const Header = () => {
             icon: "error",
             title: "Oops...",
             text: "You are Loged Out..!!",
-          });
-          return false;
+        });
+        profiletoggle();
+        return false;
     };
+
+    const showData = () => {
+        profiletoggle();
+
+    };
+
+    const isLoggedIn = Object.keys(logData).length > 0;
 
     return (
         <>
@@ -53,16 +67,18 @@ export const Header = () => {
                 </div>
 
                 <div>
-                    {Object.keys(logData).length > 0 ? (
-                        <Button onClick={logoutHandler}>Logout</Button>
+                    {isLoggedIn ? (
+                        <span onClick={showData} role='button' style={{ color: "palegoldenrod"}}> <CircleUser /></span>
                     ) : (
-                        <Button onClick={logtoggle}>Login</Button>
+                        <Button onClick={logtoggle}>Log In</Button>
                     )}
                 </div>
             </Navbar>
 
             <UserModal modal={regmodal} toggle={regtoggle} logtoggle={logtoggle} />
             <LoginModal modal={logmodal} toggle={logtoggle} regtoggle={regtoggle} />
+            <ProfileModal profilemodal={profilemodal} setProfileModal={setProfileModal} profiletoggle={profiletoggle} logoutHandler={logoutHandler} loggedUser={logData} />
+            {/* <AddModal modal={regmodal} toggle={regtoggle} regtoggle={regtoggle} />   */}
         </>
     );
 };
