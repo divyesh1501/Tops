@@ -24,14 +24,15 @@ export default function UserModal({ modal, toggle, logtoggle }) {
       setData(intialData)
       return false;
     }
-    // else if (user.userName === data.userName) {
-    //   Swal.fire({
-    //     icon: 'warning',
-    //     text: 'User Name is already exists..!!'
-    //   })
-    //   setData(intialData)
+    
+    else if (data.userName === data.userName) {
+      Swal.fire({
+        icon: 'warning',
+        text: 'User Name is already exists..!!'
+      })
+      setData(intialData)
 
-    // }
+    }
     // else if (data.password !== data.cpassword) {
     //   window.alert("password dose not match")
     // }
