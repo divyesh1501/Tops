@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select'
-import {ToastContainer, toast} from 'react-toastify'
+import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
 
-import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Toast } from 'reactstrap';
 const initialData = {
     title: "",
     description: "",
@@ -15,10 +15,9 @@ const initialData = {
     discountPercentage: "0",
     color: [],
     size: [],
-
 }
+
 const colorArry = ["Red", "White", "Black"]
-// const categoryArry = ["Cloth", "T-Shirt", "Shirt", "Kurti", "Jecket", "Denim", "shoesdurable", "shoeslightweight", "smartphones4g", "smartphones5g", "smartphones3g4g"]
 const options = [
     { value: 'Cloth', label: 'Cloth' },
     { value: 'T-Shirt', label: 'T-Shirt' },
@@ -33,7 +32,7 @@ const options = [
     { value: 'smartphones3g4g', label: 'smartphones3g4g' }
 ]
 
-const genderArry = ["Male", "Female", "Other"]
+const genderArry = ["male", "female", "other"]
 const sizeArry = ["44", "45", "42", "43"]
 
 export default function ProductModal({ modal, toggle, seledctedProduct, showElipsis }) {
@@ -49,8 +48,6 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
     }, [seledctedProduct])
 
     const addData = () => {
-        // console.log("🚀 ~ addData ~ addData:", addData)
-        console.log("======>12345", addProduct)
         axios({
             method: "post",
             url: `http://localhost:9999/product/create`,
@@ -69,13 +66,6 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
         toggle()
     }
 
-    // const showCatogary = (selected) => {
-    //     let select = selected.map((e) => {
-    //         return e.label
-    //     })
-    //     setAddProduct({ ...addProduct, category: select })
-    // }
-
     const handleCategoryChange = (selected) => {
         let select = selected.map((e) => e.value); // Extracting values from selected options
         setAddProduct({ ...addProduct, category: select });
@@ -85,20 +75,6 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
         setDiscountPercentage(e.target.value);
         setAddProduct({ ...addProduct, discountPercentage: e.target.value });
     };
-    // const showAllData = () => {
-    //     console.log("showAllData ==>", addProduct)
-    //     toggle()
-
-    // }
-    // const selectHandler = (selectedData, key) => {
-    //     const updated = addProduct[key]?.includes(selectedData)
-    //     if (updated) {
-    //         let data = addProduct[key]?.filter((e) => e !== selectedData)
-    //         setAddProduct({ ...addProduct, [key]: data })
-    //     } else {
-    //         setAddProduct({ ...addProduct, [key]: [...addProduct[key], selectedData] });
-    //     }
-    // };
 
     const selectHandler = (selectedData, key) => {
         const updated = addProduct[key]?.includes(selectedData);
@@ -109,16 +85,6 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
             setAddProduct({ ...addProduct, [key]: [...addProduct[key], selectedData] });
         }
     };
-
-    // const selectHandlerSize = (selectedSize) => {
-    //     const updated = addProduct.size.includes(selectedSize)
-    //     if (updated) {
-    //         let data = addProduct.size.filter((e) => e !== selectedSize)
-    //         setAddProduct({ ...addProduct, size: data })
-    //     } else {
-    //         setAddProduct({ ...addProduct, size: [...addProduct.size, selectedSize] });
-    //     }
-    // };
     return (
         <div>
             <Modal isOpen={modal} toggle={toggle} fullscreen className='w-50 m-auto'>
@@ -148,50 +114,6 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
                                 )
                             })
                         }
-
-                        {/* <FormGroup>
-                            <Label for="exampleDescription">
-                                Description
-                            </Label>
-                            <Input
-                                id="exampleDescription"
-                                name="description"
-                                placeholder="Description"
-                                type="text"
-                                value={addProduct.description}
-                                onChange={(e) => { setAddProduct({ ...addProduct, description: e?.target?.value }) }}
-                            />
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="exampleBrand">
-                                Brand
-                            </Label>
-                            <Input
-                                id="exampleBrand"
-                                name="brand"
-                                placeholder="Brand"
-                                type="text"
-                                value={addProduct.brand}
-                                onChange={(e) => { setAddProduct({ ...addProduct, brand: e?.target?.value }) }}
-                            />
-                        </FormGroup> */}
-                        {/* <FormGroup>
-                                <Label for="examplenumber">
-                                    Price
-                                </Label>
-                                <Input
-                                    id="examplenumber"
-                                    name="number"
-                                    type="number"
-                                    value={addProduct.price}
-                                    onChange={(e) => { setAddProduct({ ...addProduct, price: e?.target?.value }) }}
-                                />
-                            </FormGroup> */}
-                        {/* <FormGroup>
-                            <Label for="exampleSelect">Category</Label>
-                            <Select options={options} isMulti
-                                onChange={(selected) => options(selected)} />
-                        </FormGroup> */}
                         <FormGroup>
                             <Label for="exampleSelect">Category</Label>
                             <Select options={options} isMulti
