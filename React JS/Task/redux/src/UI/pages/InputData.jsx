@@ -1,18 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button, Input, Table } from 'reactstrap';
-import { Pencil, PencilRuler, PlusSquare, Trash2, Search } from 'lucide-react';
+import { Pencil, PlusSquare, Trash2 } from 'lucide-react';
 import { addInput, editInput, removeInput } from '../../Redux/features/Input/Input';
 
 export default function InputData() {
   const [input, setInput] = useState('');
   const [editIndex, setEditIndex] = useState(null);
   const [search, setSearch] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
   const inputData = useSelector((store) => store.inputReducer.inputData);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    // Update filteredData whenever inputData or search changes
+    const filtered = inputData.filter((e) => e.toLowerCase().includes(search.toLowerCase()));
+    setFilteredData(filtered);
+  }, [inputData, search]);
+
   const addData = () => {
+    if(input === ""){
+      alert("please enter data")
+      return;
+    }
     if (editIndex !== null) {
       dispatch(editInput({ editIndex, input }));
       setEditIndex(null);
@@ -31,18 +42,17 @@ export default function InputData() {
     setEditIndex(i);
   };
 
-  const filteredData = inputData.filter((e) => e.toLowerCase().includes(search.toLowerCase()));
-
   return (
     <>
       <div className='d-flex flex-column' style={{ backgroundColor: '#ffa50057' }}>
         <div className='mt-3 mb-3 d-flex justify-content-center'>
-          <Input onChange={(e) => setInput(e.target.value)} value={input} style={{ boxShadow: 'none', width: '300px' }} />
-          <Button color='success' style={{ boxShadow: 'none', marginLeft:"5px" }} onClick={() => addData()}>
+          <Input
+            placeholder='Enter data'
+            onChange={(e) => setInput(e.target.value)}
+            value={input}
+            style={{ boxShadow: 'none', width: '300px' }} />
+          <Button color='success' style={{ boxShadow: 'none', marginLeft: '5px' }} onClick={() => addData()}>
             <PlusSquare />
-          </Button>
-          <Button color='success' style={{ boxShadow: 'none', marginLeft:"5px" }} onClick={() => addData()}>
-            <PencilRuler />
           </Button>
         </div>
         <div className='mt-3 mb-3 d-flex justify-content-center'>
@@ -50,13 +60,12 @@ export default function InputData() {
             placeholder='Search'
             onChange={(e) => setSearch(e.target.value)}
             value={search}
-            style={{ boxShadow: 'none', width: '410px' }}
+            style={{ boxShadow: 'none', width: '356px' }}
           />
         </div>
       </div>
       <div>
-        
-        <Table striped>
+        {filteredData.length === 0 ? (<div className='d-flex justify-content-center' style={{ fontSize: "30px", fontWeight: "bold" }}><p>Data not found ..!!</p> </div>) : (<Table striped>
           <thead>
             <tr>
               <th>Sr.No</th>
@@ -79,7 +88,8 @@ export default function InputData() {
               </tr>
             ))}
           </tbody>
-        </Table>
+        </Table>)
+        }
       </div>
     </>
   );
