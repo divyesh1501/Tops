@@ -15,8 +15,8 @@ const initialData = {
     discountPercentage: "0",
     color: [],
     size: [],
-}
 
+}
 const colorArry = ["Red", "White", "Black"]
 const options = [
     { value: 'Cloth', label: 'Cloth' },
@@ -85,6 +85,7 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
             setAddProduct({ ...addProduct, [key]: [...addProduct[key], selectedData] });
         }
     };
+
     return (
         <div>
             <Modal isOpen={modal} toggle={toggle} fullscreen className='w-50 m-auto'>
@@ -114,6 +115,8 @@ export default function ProductModal({ modal, toggle, seledctedProduct, showElip
                                 )
                             })
                         }
+
+                        
                         <FormGroup>
                             <Label for="exampleSelect">Category</Label>
                             <Select options={options} isMulti
