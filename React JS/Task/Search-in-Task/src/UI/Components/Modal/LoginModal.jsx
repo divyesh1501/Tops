@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import Swal from 'sweetalert2'
-import AddModal from './AddModal';
 
 const intialData = {
     userName: "",
@@ -21,6 +20,13 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
     let loginUser = () => {
         let getData = JSON.parse(localStorage.getItem("userData")) || []
         let findGetData = getData.find((e) => e.userName === loginData.userName && e.password === loginData.password)
+        if (!findGetData) {
+            Swal.fire({
+                icon: "warning",
+                text: "Invalid username or password",
+            });
+            return false;
+        }
         if (findGetData) {
             localStorage.setItem("loginData", JSON.stringify(findGetData))
             toggle()

@@ -6,7 +6,6 @@ import UserModal from '../Modal/UserModal';
 import One5 from '../../Images/One5Logo.png';
 import LoginModal from '../Modal/LoginModal';
 import Swal from 'sweetalert2';
-import AddModal from '../Modal/AddModal';
 import { CircleUser } from "lucide-react";
 import ProfileModal from '../Modal/ProfileModal';
 
@@ -68,7 +67,7 @@ export const Header = () => {
 
                 <div>
                     {isLoggedIn ? (
-                        <span onClick={showData} role='button' style={{ color: "palegoldenrod"}}> <CircleUser /></span>
+                        <span onClick={showData} role='button' style={{ color: "palegoldenrod" }}> <CircleUser /></span>
                     ) : (
                         <Button onClick={logtoggle}>Log In</Button>
                     )}
@@ -78,7 +77,6 @@ export const Header = () => {
             <UserModal modal={regmodal} toggle={regtoggle} logtoggle={logtoggle} />
             <LoginModal modal={logmodal} toggle={logtoggle} regtoggle={regtoggle} />
             <ProfileModal profilemodal={profilemodal} setProfileModal={setProfileModal} profiletoggle={profiletoggle} logoutHandler={logoutHandler} loggedUser={logData} />
-            {/* <AddModal modal={regmodal} toggle={regtoggle} regtoggle={regtoggle} />   */}
         </>
     );
 };

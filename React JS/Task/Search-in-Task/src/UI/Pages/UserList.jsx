@@ -1,26 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Col, FormGroup, Input, Label, Table } from 'reactstrap';
-import Select from "react-select";
 
 export const UserList = ({ modal, toggle, regtoggle }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedTypes, setSelectedTypes] = useState(['all']); // 'all' is initially selected
-
+  const [selectedTypes, setSelectedTypes] = useState([]); // Use an array to store selected types
   const [allUsers, setAllUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
 
-
-
   const options = [
-    { value: 'all', label: 'All' },
     { value: 'admin', label: 'Admin' },
     { value: 'employee', label: 'Employee' },
     { value: 'user', label: 'User' }
   ];
 
-
   useEffect(() => {
-    // Fetch user list from localStorage on component mount
     const storedUsers = JSON.parse(localStorage.getItem('userData')) || [];
     setAllUsers(storedUsers);
     setFilteredUsers(storedUsers);
@@ -29,7 +22,7 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
   useEffect(() => {
     let filtered;
 
-    if (selectedTypes.includes('all')) {
+    if (selectedTypes.length === 0) {
       filtered = allUsers.filter(user => user.userName.toLowerCase().includes(searchTerm.toLowerCase()));
     } else {
       filtered = allUsers.filter(user => selectedTypes.includes(user.userType.toLowerCase()) && user.userName.toLowerCase().includes(searchTerm.toLowerCase()));
@@ -39,40 +32,49 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
 
   }, [searchTerm, selectedTypes, allUsers]);
 
-  const handleTypeChange = (selected) => {
-    const selectedValues = selected ? selected.map(option => option.value) : [];
-    setSelectedTypes(selectedValues.length > 0 ? selectedValues : ['all']);
+  const handleTypeChange = (type) => {
+    const updatedTypes = [...selectedTypes];
+    const index = updatedTypes.indexOf(type);
+
+    if (index === -1) {
+      updatedTypes.push(type);
+    } else {
+      updatedTypes.splice(index, 1);
+    }
+
+    setSelectedTypes(updatedTypes);
     setSearchTerm('');
   };
-
-  const addUser = () => {
-    toggle
-    regtoggle()
-  }
 
 
   return (
     <div className='userTable d-flex align-items-center flex-column mt-3 '>
       <div>
         <FormGroup row>
-          <div className='d-flex'style={{width:"65.5vw", marginLeft:"165px", boxShadow:"none"}} >
-            <Label
-              for="exampleSelect"
-              sm={1}
-              style={{ width: "100px" }}
-            >
-              User Type:
-            </Label>
-            <Col sm={10}>
-              <Select
-                id="exampleSelect"
-                name="select"
-                value={options.filter(option => selectedTypes.includes(option.value))}
-                options={options}
-                isMulti
-                onChange={(selected) => handleTypeChange(selected)}
-              />
-            </Col>
+          <div className='d-flex' style={{ width: "65.5vw", marginLeft: "268px", boxShadow: "none" }} >
+            <div className='d-flex align-items-center'>
+              <Label
+                for="exampleSelect"
+                sm={1}
+                style={{ width: "100px" }}
+              >
+                User Type:
+              </Label>
+              <Col sm={10}>
+                {options.map((option) => (
+                  <div key={option.value} className="form-check form-check-inline align-items-center" style={{marginTop:"10px"}}>
+                    <Input
+                      className="form-check-input"
+                      type="checkbox"
+                      id={option.value}
+                      checked={selectedTypes.includes(option.value)}
+                      onChange={() => handleTypeChange(option.value)}
+                    />
+                    <Label className="form-check-label" for={option.value}>{option.label}</Label>
+                  </div>
+                ))}
+              </Col>
+            </div>
           </div>
         </FormGroup>
       </div>
@@ -86,10 +88,13 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ width: "60vw" }}
           />
-          <Button onClick={addUser} >Add User</Button>
         </div>
         <div>
-          <Table striped style={{ width: "60vw", marginLeft: "108px" }}>
+          {filteredUsers.length === 0 ? (
+            <div className='d-flex justify-content-center m-5' style={{ fontSize: "30px", fontWeight: "bold" }}>
+              <p>Data not found ..!!</p>
+            </div>
+          ) : (<Table striped style={{ width: "60vw", marginLeft: "108px" }}>
             <thead>
               <tr>
                 <th>Sr.No</th>
@@ -99,21 +104,20 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
               </tr>
             </thead>
             <tbody>
-              {filteredUsers.map((e, i) => (
-                <tr key={i}>
-                  <td>{i + 1}</td>
-                  <td>{e.userName}</td>
-                  <td>{e.password}</td>
-                  <td>{e.userType}</td>
+              {filteredUsers.map((user, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{user.userName}</td>
+                  <td>{user.password}</td>
+                  <td>{user.userType}</td>
                 </tr>
               ))}
             </tbody>
-          </Table>
-        </div>
+          </Table>)}
 
+        </div>
       </div>
     </div >
-
   );
-
 };
+

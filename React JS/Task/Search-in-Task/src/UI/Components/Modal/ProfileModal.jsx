@@ -1,8 +1,8 @@
 import { Power, XCircle } from 'lucide-react';
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Table } from 'reactstrap';
 
-export default function ProfileModal({ logoutHandler, loggedUser, profilemodal, setProfileModal, profiletoggle }) {
+export default function ProfileModal({ logoutHandler, loggedUser, profilemodal, profiletoggle }) {
     
 
     return (
