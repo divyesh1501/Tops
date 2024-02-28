@@ -11,6 +11,6 @@ export const store = configureStore({
         amountReducer: amountSlice,
         pointReducer: pointSlice,
         inputReducer: inputSlice,
-        apiReducer: apiSlice
+        apiSlice: apiSlice
     }
 });

@@ -9,6 +9,7 @@ import Amount from './UI/pages/Amount';
 import Count from './UI/pages/Count';
 import Point from './UI/pages/point';
 import InputData from './UI/pages/InputData';
+import User from './UI/pages/User';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
         {/* <Count /> */}
         {/* <Amount /> */}
         {/* <Point /> */}
-        <InputData />
+        {/* <InputData /> */}
+        <User />
         </div>
       </Provider>,
     </>
