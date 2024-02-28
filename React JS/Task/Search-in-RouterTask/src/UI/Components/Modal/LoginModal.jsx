@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import Swal from 'sweetalert2'
+import { UserList } from '../../Pages/UserList';
 
 const intialData = {
     userName: "",
@@ -40,53 +41,55 @@ export default function LoginModal({ modal, toggle, regtoggle }) {
     }
 
     return (
-        <div>
+        <>
+            <div>
 
-            <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Sign In User</ModalHeader>
-                <ModalBody>
-                    <Form>
-                        <FormGroup>
-                            <Label for="exampleUserName">
-                                UserName
-                            </Label>
-                            <Input
-                                id="exampleUserName"
-                                value={loginData.userName}
-                                name="UserName"
-                                placeholder="Enter a UserName"
-                                type="UserName"
-                                onChange={(e) => { setLoginData({ ...loginData, userName: e.target.value }) }}
-                            />
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="examplePassword">
-                                Password
-                            </Label>
-                            <Input
-                                id="examplePassword"
-                                value={loginData.password}
-                                name="password"
-                                placeholder="Enetr password"
-                                type="password"
-                                onChange={(e) => { setLoginData({ ...loginData, password: e.target.value }) }}
+                <Modal isOpen={modal} toggle={toggle}>
+                    <ModalHeader toggle={toggle}>Sign In User</ModalHeader>
+                    <ModalBody>
+                        <Form>
+                            <FormGroup>
+                                <Label for="exampleUserName">
+                                    UserName
+                                </Label>
+                                <Input
+                                    id="exampleUserName"
+                                    value={loginData.userName}
+                                    name="UserName"
+                                    placeholder="Enter a UserName"
+                                    type="UserName"
+                                    onChange={(e) => { setLoginData({ ...loginData, userName: e.target.value }) }}
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="examplePassword">
+                                    Password
+                                </Label>
+                                <Input
+                                    id="examplePassword"
+                                    value={loginData.password}
+                                    name="password"
+                                    placeholder="Enetr password"
+                                    type="password"
+                                    onChange={(e) => { setLoginData({ ...loginData, password: e.target.value }) }}
 
-                            />
-                        </FormGroup>
-                        <p>Don't have a account Creat account <span role='button' onClick={creartaccount} style={{ color: "Blue" }}>Click Here!</span></p>
+                                />
+                            </FormGroup>
+                            <p>Don't have a account Creat account <span role='button' onClick={creartaccount} style={{ color: "Blue" }}>Click Here!</span></p>
 
-                    </Form>
-                </ModalBody>
+                        </Form>
+                    </ModalBody>
 
-                <ModalFooter>
-                    <Button color="primary" onClick={loginUser}>
-                        SignIn
-                    </Button>{' '}
-                    <Button color="secondary" onClick={toggle}>
-                        Cancel
-                    </Button>
-                </ModalFooter>
-            </Modal>
-        </div>
+                    <ModalFooter>
+                        <Button color="primary" onClick={loginUser}>
+                            SignIn
+                        </Button>{' '}
+                        <Button color="secondary" onClick={toggle}>
+                            Cancel
+                        </Button>
+                    </ModalFooter>
+                </Modal>
+            </div>
+        </>
     );
 }

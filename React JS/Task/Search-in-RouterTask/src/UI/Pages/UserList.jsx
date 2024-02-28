@@ -41,7 +41,6 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
     } else {
       updatedTypes.splice(index, 1);
     }
-
     setSelectedTypes(updatedTypes);
     setSearchTerm('');
   };
@@ -49,10 +48,10 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
 
   return (
     <div className='userTable d-flex align-items-center flex-column mt-3 '>
-      <div>
-        <FormGroup row>
-          <div className='d-flex' style={{ width: "65.5vw", marginLeft: "268px", boxShadow: "none" }} >
-            <div className='d-flex align-items-center'>
+      <div className='d-flex w-100'>
+        <FormGroup row className='w-100'>
+          <div className='d-flex justify-content-center w-100'>
+            <div className='d-flex align-items-center' style={{marginRight:"50px"}}>
               <Label
                 for="exampleSelect"
                 sm={1}
@@ -62,7 +61,7 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
               </Label>
               <Col sm={10}>
                 {options.map((option) => (
-                  <div key={option.value} className="form-check form-check-inline align-items-center" style={{marginTop:"10px"}}>
+                  <div key={option.value} className="form-check form-check-inline align-items-center" style={{ marginTop: "10px" }}>
                     <Input
                       className="form-check-input"
                       type="checkbox"
@@ -75,8 +74,12 @@ export const UserList = ({ modal, toggle, regtoggle }) => {
                 ))}
               </Col>
             </div>
+
           </div>
         </FormGroup>
+        <div style={{width:"23%"}}>
+          <Button onClick={regtoggle} >Add User</Button>
+        </div>
       </div>
 
       <div className='d-flex flex-column' style={{ marginLeft: "100px" }}>

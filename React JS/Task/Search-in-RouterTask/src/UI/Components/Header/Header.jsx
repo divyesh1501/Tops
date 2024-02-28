@@ -8,12 +8,12 @@ import LoginModal from '../Modal/LoginModal';
 import Swal from 'sweetalert2';
 import { CircleUser } from "lucide-react";
 import ProfileModal from '../Modal/ProfileModal';
+import { UserList } from '../../Pages/UserList';
+import Router from '../../../Router/Router';
 
-export const Header = () => {
-    const [regmodal, setRegModal] = useState(false);
+export const Header = ({ regmodal, regtoggle, setRegModal }) => {
     const [logmodal, setLogModal] = useState(false);
     const [profilemodal, setProfileModal] = useState(false);
-    const regtoggle = () => setRegModal(!regmodal);
     const logtoggle = () => setLogModal(!logmodal);
     const profiletoggle = () => setProfileModal(!profilemodal);
 
@@ -44,6 +44,7 @@ export const Header = () => {
 
     return (
         <>
+
             <Navbar color="dark" dark>
                 <NavbarBrand href="/">
                     <div className='d-flex justify-content-center'>
@@ -77,6 +78,7 @@ export const Header = () => {
             <UserModal modal={regmodal} toggle={regtoggle} logtoggle={logtoggle} />
             <LoginModal modal={logmodal} toggle={logtoggle} regtoggle={regtoggle} />
             <ProfileModal profilemodal={profilemodal} setProfileModal={setProfileModal} profiletoggle={profiletoggle} logoutHandler={logoutHandler} loggedUser={logData} />
+
         </>
     );
 };
