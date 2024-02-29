@@ -4,21 +4,32 @@ import { Button, Table } from "reactstrap";
 import user, { fatchUser } from '../../Redux/features/user/user';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import UserData from './UserData';
 
 export default function User() {
 
   const [data, setData] = useState([])
 
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   useEffect(() => {
     dispatch(fatchUser())
-  }, [])
+  }, [dispatch])
 
+
+  // const userID = (id) => {
+  //   console.log(id)
+  //   navigate("/userdata");
+  // }
 
   const userID = (id) => {
-    console.log(id)
+    // console.log("Button clicked. Navigating...");
+    navigate("/userdata");
+    console.log("id==",id);
   }
+
   let { user, errorMsg, pending } = useSelector((store) => {
     return store?.apiSlice;
   })
@@ -26,9 +37,9 @@ export default function User() {
     setData(user)
   }, [user])
 
-  console.log("=====ddd", data)
+  // console.log("=====ddd", data)
 
-  console.log("🚀 ~ let{user,errorMsg,pending}=useSelector ~ errorMsg:", errorMsg, !errorMsg)
+  // console.log("🚀 ~ let{user,errorMsg,pending}=useSelector ~ errorMsg:", errorMsg, !errorMsg)
 
   if (pending) return <h1>loading....</h1>
   if (errorMsg) alert(errorMsg)

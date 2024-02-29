@@ -10,6 +10,7 @@ import Count from './UI/pages/Count';
 import Point from './UI/pages/point';
 import InputData from './UI/pages/InputData';
 import User from './UI/pages/User';
+import Router from './Router/Router';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         {/* <Amount /> */}
         {/* <Point /> */}
         {/* <InputData /> */}
-        <User />
+        <Router />
         </div>
       </Provider>,
     </>
@@ -30,3 +31,24 @@ function App() {
 }
 
 export default App
+
+
+// // App.jsx
+// import React from "react";
+// import { Provider } from 'react-redux'
+// import { store } from "./Redux/app/store";
+// import Router from './Router/Router';
+
+// function App() {
+//   return (
+//     <>
+//       <Provider store={store}>
+//         <div>
+//           <Router />
+//         </div>
+//       </Provider>
+//     </>
+//   )
+// }
+
+// export default App;
