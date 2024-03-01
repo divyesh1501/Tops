@@ -32,9 +32,6 @@ export default function User() {
       setData(user);
     }
   }, [user]);
-  // useEffect(() => {
-  //   setData(user)
-  // }, [user])
 
   if (pending) return <h1>loading....</h1>
   if (errorMsg) alert(errorMsg)
