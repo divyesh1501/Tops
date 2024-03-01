@@ -31,24 +31,3 @@ function App() {
 }
 
 export default App
-
-
-// // App.jsx
-// import React from "react";
-// import { Provider } from 'react-redux'
-// import { store } from "./Redux/app/store";
-// import Router from './Router/Router';
-
-// function App() {
-//   return (
-//     <>
-//       <Provider store={store}>
-//         <div>
-//           <Router />
-//         </div>
-//       </Provider>
-//     </>
-//   )
-// }
-
-// export default App;

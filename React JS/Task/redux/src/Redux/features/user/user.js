@@ -1,21 +1,21 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fatchUser = createAsyncThunk("/fetchuser", async () => {
+export const fatchUser = createAsyncThunk("/fetchuser", () => {
+
     return axios({
         method: "get",
         url: "https://fakestoreapi.com/users",
     }).then((res) => {
-        console.log(res)
         return res.data
     })
 })
-export const fatchSingleUser = createAsyncThunk("/fetcSinglehuser", async(id) => {
+
+export const fatchSingleUser = createAsyncThunk("/fetcSinglehuser", (id) => {
     return axios({
         method: "get",
         url: `https://fakestoreapi.com/users/${id}`,
     }).then((res) => {
-        console.log(res)
         return res.data
     })
 })
@@ -34,7 +34,7 @@ const apiSlice = createSlice({
                 state.pending = true;
             })
             .addCase(fatchUser.rejected, (state, action) => {
-                    state.errorMsg = action.error.message
+                state.errorMsg = action.error.message
                 state.pending = false;
             })
             .addCase(fatchSingleUser.fulfilled, (state, action) => {
@@ -45,7 +45,7 @@ const apiSlice = createSlice({
                 state.pending = true;
             })
             .addCase(fatchSingleUser.rejected, (state, action) => {
-                    state.errorMsg = action.error.message
+                state.errorMsg = action.error.message
                 state.pending = false;
             })
     }
