@@ -1,0 +1,10 @@
+
+span.icon-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+span.lucid-icon {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
