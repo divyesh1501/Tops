@@ -1,25 +1,30 @@
 .accordion {
     width: 100%;
-  }
-  
-  .accordion-item {
+}
+
+.accordion-item {
     border: 1px solid #ddd;
     margin-bottom: 5px;
-  }
-  
-  .accordion-title {
+}
+
+.accordion-title {
     padding: 10px;
     background-color: #f1f1f1;
     cursor: pointer;
-  }
-  
-  .accordion-body {
+}
+
+.accordion-body {
     padding: 10px;
     display: none;
     border-top: 1px solid #ddd;
-  }
-  
-  .accordion-body.open {
+}
+
+.accordion-body.open {
     display: block;
-  }
-  
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

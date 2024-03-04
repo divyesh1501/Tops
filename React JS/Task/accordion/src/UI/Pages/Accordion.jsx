@@ -1,62 +1,41 @@
-// import React, { useState } from 'react';
-// // import './Accordion.css'; // You can style it as per your need
-
-// const Accordion = ({ items }) => {
-//   const [openIndex, setOpenIndex] = useState(null);
-
-//   const toggleAccordion = (index) => {
-//     setOpenIndex(openIndex === index ? null : index);
-//   };
-
-//   return (
-//     <div className="accordion">
-//       {items.map((item, index) => (
-//         <div key={index} className="accordion-item">
-//           <div className="accordion-title" onClick={() => toggleAccordion(index)}>
-//             {item.title}
-//           </div>
-//           <div className={`accordion-body ${openIndex === index ? 'open' : 'closed'}`}>
-//             {item.body}
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Accordion;
-
-
 import React, { useState } from 'react';
-import './accordion.css'; // You can style it as per your need
+import './accordion.css';
+import { ChevronDown } from 'lucide-react';
 
-const Accordion = ({ items, defaultOpenIndexes }) => {
-  const [openIndexes, setOpenIndexes] = useState(defaultOpenIndexes || []);
+export default function Accordion({ items, defaultOpenIndexes }) {
+    const [openIndexes, setOpenIndexes] = useState(defaultOpenIndexes || []);
 
-  const toggleAccordion = (index) => {
-    setOpenIndexes((prevIndexes) => {
-      if (prevIndexes.includes(index)) {
-        return prevIndexes.filter((i) => i !== index);
-      } else {
-        return [...prevIndexes, index];
-      }
-    });
-  };
+    const toggleAccordion = (index) => {
+        setOpenIndexes((prevIndexes) => {
+            if (prevIndexes.includes(index)) {
+                return prevIndexes.filter((i) => i !== index);
+            } else {
+                return [...prevIndexes, index];
+            }
+        });
+    };
 
-  return (
-    <div className="accordion">
-      {items.map((item, index) => (
-        <div key={index} className="accordion-item">
-          <div className="accordion-title" onClick={() => toggleAccordion(index)}>
-            {item.title}
-          </div>
-          <div className={`accordion-body ${openIndexes.includes(index) ? 'open' : 'closed'}`}>
-            {item.body}
-          </div>
+    return (
+        <div className="accordion">
+            {items.map((item, index) => (
+                <div key={index} className="accordion-item">
+                    <div className="accordion-title" onClick={() => toggleAccordion(index)}>
+                        {item.title}
+                        <span className="lucid-icon"><ChevronDown /></span>
+                    </div>
+                    {openIndexes.includes(index) ? (
+                        <div className="accordion-body open">
+                            {item.body}
+                        </div>
+                    ) : (
+                        <div className="accordion-body closed">
+                            {item.body}
+                        </div>
+                    )}
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
-export default Accordion;
+
