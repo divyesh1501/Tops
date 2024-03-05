@@ -4,7 +4,7 @@ import './ToDoList.css';
 import Swal from 'sweetalert2';
 import PendingTask from './PendingTask';
 import DoneTask from './DoneTask';
-import { Edit } from 'lucide-react';
+import {PlusSquare, UserPlus } from 'lucide-react';
 
 export default function ToDoList() {
 
@@ -28,7 +28,7 @@ export default function ToDoList() {
         e?.preventDefault()
 
         if (inputText !== "") {
-         
+
             setTodo([...todo, inputText.charAt(0).toUpperCase() + inputText.slice(1)])
             localStorage.setItem("pendingList", JSON.stringify([...todo, inputText]))
             setInputText("");
@@ -69,16 +69,17 @@ export default function ToDoList() {
                             <div className="bt1">
                                 {
                                     (editIndex !== null) ? (
-                                        <Edit
+                                        <PlusSquare
                                             id="update"
                                             type="update"
                                             onClick={updateData}
                                         />
                                     ) : (
-                                        <Button
+                                        <UserPlus
                                             id="submit"
                                             type="submit"
-                                        ><span>+</span></Button>
+                                            onClick={submit}
+                                        />
                                     )
                                 }
                             </div>

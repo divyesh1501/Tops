@@ -5,7 +5,7 @@ import { Button } from 'reactstrap';
 import Swal from 'sweetalert2';
 
 
-export default function PendingTask({ todo, setTodo, completedTodo, setCompletedTodo,editHandler }) {
+export default function PendingTask({ todo, setTodo, completedTodo, setCompletedTodo, editHandler }) {
     const [selectedNotDone, setSelectedNotDone] = useState([])
 
 
