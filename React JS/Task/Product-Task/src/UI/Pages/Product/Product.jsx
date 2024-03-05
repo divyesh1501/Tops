@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import "./index.css"
 import ProductModal from '../../Components/Modal/ProductModal';
 import TableData from '../TableData';
 import { toast } from 'react-toastify';
