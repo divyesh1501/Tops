@@ -1,7 +1,11 @@
-import React from 'react';
-import Accordion from './Accordion';
+import React, { useState } from 'react';
+import './accordion.css';
+import { ChevronDown } from 'lucide-react';
+
 
 export default function AccordionItems() {
+    const [openIndexes, setOpenIndexes] = useState([0]);
+
     const accordionItems = [
         {
             title: 'What is your return policy?',
@@ -21,12 +25,39 @@ export default function AccordionItems() {
         },
     ];
 
-    const defaultOpenIndexes = [0];
+    const toggleAccordion = (index) => {
+        setOpenIndexes((prevIndexes) => {
+            if (prevIndexes.includes(index)) {
+                return prevIndexes.filter((i) => i !== index);
+            } else {
+                return [...prevIndexes, index];
+            }
+        });
+    };
 
     return (
         <div>
             <h1>Frequently Asked Questions About Orders</h1>
-            <Accordion items={accordionItems} defaultOpenIndexes={defaultOpenIndexes} />
+
+            <div className="accordion">
+                {accordionItems.map((e, i) => (
+                    <div key={i} className="accordion-item">
+                        <div className="accordion-title" onClick={() => toggleAccordion(i)}>
+                            {e.title}
+                            <span className="lucid-icon"><ChevronDown /></span>
+                        </div>
+                        {openIndexes.includes(i) ? (
+                            <div className="accordion-body open">
+                                {e.body}
+                            </div>
+                        ) : (
+                            <div className="accordion-body closed">
+                                {e.body}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
