@@ -11,7 +11,7 @@ export default function Perfumes() {
     const IndianRupee = () => <span>&#8377;</span>
     return (
         <>
-            <div className='flex flex-row justify-center mt-16 gap-6'>
+            <div className='flex flex-row justify-center gap-6 mt-16'>
                 <div className="grid rounded-lg shadow-lg w-52 h-100 place-content-center hover:bg-gradient-to-r from-gray-400">
                     <div>
                         <h5 className="text-xl font-bold text-center uppercase">
@@ -33,12 +33,12 @@ export default function Perfumes() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <img
                         alt="Wild Stone Ultra Sensual Perfume"
                         src={peproduct1}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <div className=" w-60">
                         <h5 className="font-bold">
                             Wild Stone Ultra Sensual Perfume,100ml
@@ -67,12 +67,12 @@ export default function Perfumes() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <img
                         alt="Wild Stone Night Rider Perfume"
                         src={peproduct2}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <div className="w-60">
                         <h5 className="font-bold">
                             Wild Stone Night Rider Perfume,100ml
@@ -101,12 +101,12 @@ export default function Perfumes() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <img
                         alt="Wild Stone Forest Spice Perfume"
                         src={peproduct3}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <div className="w-60">
                         <h5 className='font-bold'>
                             Wild Stone Forest Spice Perfume,100ml

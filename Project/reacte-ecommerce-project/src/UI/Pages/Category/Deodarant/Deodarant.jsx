@@ -11,7 +11,7 @@ export default function Deodarant() {
 
     return (
         <>
-            <div className='flex flex-row justify-center mt-10 gap-6'>
+            <div className='flex flex-row justify-center gap-6 mt-10'>
                 <div className="grid rounded-lg shadow-lg w-52 h-100 place-content-center hover:bg-gradient-to-r from-gray-400">
                     <div>
                         <h5 className="text-xl font-bold text-center uppercase">
@@ -36,10 +36,9 @@ export default function Deodarant() {
                     <img
                         alt="Wild Stone Intense Black and Trance No Gas Deodorant Gift Set"
                         src={ddproduct1}
-                        className="w-full rounded-t-lg"
-                        style={{ position: "relative" }}
+                        className="relative w-full rounded-t-lg"
                     />
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' style={{ position: "absolute" }} >50% off</span>
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52'>50% off</span>
                     <div className="mt-3 w-60">
                         <h5 className="font-bold line-clamp-2">
                             Wild Stone Classic Musk Deodorant,225ml
@@ -71,10 +70,9 @@ export default function Deodarant() {
                     <img
                         alt="Wild Stone Edge, Legend and Red Deodorant Pack of 3"
                         src={ddproduct2}
-                        className="w-full rounded-t-lg"
-                        style={{ position: "relative" }}
+                        className="relative w-full rounded-t-lg"
                     />
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' style={{ position: "absolute" }} >39% off</span>
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52'>39% off</span>
                     <div className="mt-3 w-60">
                         <h5 className="font-bold line-clamp-2">
                             Wild Stone Edge, Legend and Red Deodorant Pack of 3 (150ml each)
@@ -106,10 +104,9 @@ export default function Deodarant() {
                     <img
                         alt="Wild Stone Edge, Legend and Red Deodorant Pack of 3"
                         src={ddproduct3}
-                        className="w-full rounded-t-lg"
-                        style={{ position: "relative" }}
+                        className="relative w-full rounded-t-lg"
                     />
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' style={{ position: "absolute" }} >39% off</span>
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52'>39% off</span>
                     <div className="mt-3 w-60">
                         <h5 className="font-bold line-clamp-2">
                             Wild Stone Edge, Legend and Red Deodorant Pack of 3 (150ml each)

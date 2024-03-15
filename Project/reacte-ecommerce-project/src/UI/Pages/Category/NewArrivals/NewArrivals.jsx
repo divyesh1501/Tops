@@ -33,12 +33,12 @@ export default function NewArrivals() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <img
                         alt="Wild Stone Whisky Perfume"
                         src={naproduct1}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <div className=" w-60">
                         <h5 className="font-bold">
                             Wild Stone Whisky Perfume for Men,100ml
@@ -67,12 +67,12 @@ export default function NewArrivals() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <img
                         alt="Wild Stone Cigar Perfume"
                         src={naproduct2}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <div className="w-60">
                         <h5 className="font-bold">
                             Wild Stone Cigar Perfume for Men,100ml
@@ -101,12 +101,12 @@ export default function NewArrivals() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <img
                         alt="Wild Stone Ammo Perfume"
                         src={naproduct3}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >50% off</span>
                     <div className="w-60">
                         <h5 className='font-bold'>
                             Wild Stone Ammo Perfume for Men,100ml

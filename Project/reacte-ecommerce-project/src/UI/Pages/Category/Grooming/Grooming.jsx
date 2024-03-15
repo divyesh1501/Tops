@@ -10,7 +10,7 @@ export default function Grooming() {
     const IndianRupee = () => <span>&#8377;</span>
     return (
         <>
-            <div className='flex flex-row justify-center mt-10 gap-6'>
+            <div className='flex flex-row justify-center gap-6 mt-10'>
                 <div className="grid rounded-lg shadow-lg w-52 h-100 place-content-center hover:bg-gradient-to-r from-gray-400">
                     <div>
                         <h5 className="text-xl font-bold text-center uppercase">
@@ -38,7 +38,7 @@ export default function Grooming() {
                         src={grproduct1}
                         className="w-full rounded-t-lg"
                     />
-                    <div className="mt-8 w-60">
+                    <div className="w-60">
                         <h5 className="font-bold">
                             Wild Stone Musk Soap,<p>125gm</p>
                         </h5>
@@ -65,12 +65,12 @@ export default function Grooming() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
-                    <span className='w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >18% off</span>
                     <img
                         alt="Wild Stone Ultra Sensual Talc"
                         src={grproduct2}
-                        className="w-full"
+                        className="relative w-full"
                     />
+                    <span className='absolute w-20 my-1 font-bold text-center text-white bg-yellow-600 rounded-xl ms-52' >18% off</span>
                     <div className="w-60">
                         <h5 className="font-bold">
                             Wild Stone Ultra Sensual Talc,100gm
@@ -103,9 +103,9 @@ export default function Grooming() {
                     <img
                         alt="Wild Stone Ultra Sensual Soap"
                         src={grproduct3}
-                        className="rounded-t-lg w-full"
+                        className="w-full rounded-t-lg"
                     />
-                    <div className="mt-8 w-60">
+                    <div className="w-60">
                         <h5 className='font-bold'>
                             Wild Stone Ultra Sensual Soap,125gm
                         </h5>

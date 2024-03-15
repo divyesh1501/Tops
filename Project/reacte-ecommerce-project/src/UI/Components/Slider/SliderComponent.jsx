@@ -6,7 +6,7 @@ import Slide1 from '../Slider/Images/Slider1.webp';
 import Slide2 from '../Slider/Images/Slider2.webp';
 import Slide3 from '../Slider/Images/Slider3.webp';
 import Slide4 from '../Slider/Images/Slider4.webp';
-import { ChevronLeft, ChevronLeftCircle, ChevronRight, ChevronRightCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import "./slider.css"
 
 export default function SliderComponent() {

@@ -2,6 +2,8 @@ import React from 'react'
 import SliderComponent from "../../Components/Slider/SliderComponent";
 import Category from '../Category/Category'
 import Product from '../Product/Product'
+import AboutUs from '../AboutUs/AboutUs';
+import FeedAndTrendSlider from '../../Components/FeedBack&Trending/FeedAndTrendSlider';
 
 export default function HomePage() {
   return (
@@ -9,6 +11,8 @@ export default function HomePage() {
       <SliderComponent />
       <Product />
       <Category />
+      <AboutUs />
+      <FeedAndTrendSlider />
     </>
   )
 }
