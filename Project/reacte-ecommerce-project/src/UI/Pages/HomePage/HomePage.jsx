@@ -4,6 +4,8 @@ import Category from '../Category/Category'
 import Product from '../Product/Product'
 import AboutUs from '../AboutUs/AboutUs';
 import FeedAndTrendSlider from "../../Components/FeedBackAndTrending/FeedAndTrendSlider";
+import ManGuide from '../ManGuide/ManGuide';
+import AboutWS from '../AboutWS/AboutWS';
 
 export default function HomePage() {
   return (
@@ -13,6 +15,8 @@ export default function HomePage() {
       <Category />
       <AboutUs />
       <FeedAndTrendSlider />
+      <ManGuide />
+      <AboutWS />
     </>
   )
 }

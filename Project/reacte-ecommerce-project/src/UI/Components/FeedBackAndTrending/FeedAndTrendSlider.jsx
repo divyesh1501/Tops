@@ -61,7 +61,7 @@ export default function FeedAndTrendSlider() {
     return (
         <div className="relative">
             <div className='flex justify-center w-full my-5 bg-black'>
-                <h1 className='my-2 text-4xl font-bold text-white uppercase'>wild and trending</h1>
+                <h1 className='my-2 text-4xl font-bold text-white capitalize'>wild & trending</h1>
                 <div className='flex justify-end'>
                     <img className="filter invert brightness-150" src={hm} alt="hmark" />
                 </div>
