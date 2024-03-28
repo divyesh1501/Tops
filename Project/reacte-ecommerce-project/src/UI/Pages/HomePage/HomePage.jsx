@@ -6,6 +6,7 @@ import AboutUs from '../AboutUs/AboutUs';
 import FeedAndTrendSlider from "../../Components/FeedBackAndTrending/FeedAndTrendSlider";
 import ManGuide from '../ManGuide/ManGuide';
 import AboutWS from '../AboutWS/AboutWS';
+import Policeis from '../Policies/Policeis';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AboutUs />
       <FeedAndTrendSlider />
       <ManGuide />
+      <Policeis />
       <AboutWS />
     </>
   )
