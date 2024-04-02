@@ -20,7 +20,7 @@ const articles = [
     },
     {
         title: "Unforgettable Valentine’s Day Date Ideas",
-        description: "The month of love has already arrived, and Valentine's Day is just around the corner. February is renowned as the time for expressing affection and emotions, with Valentine's Day falling ...",
+        description: "The month of love has already arrived, and Valentine's Day is just around the corner. February is renowned as the time for expressing affection and emotions, with Valentine's Day falling...",
         image: MG3,
         // link: "/valentines-day-date-ideas"
     }

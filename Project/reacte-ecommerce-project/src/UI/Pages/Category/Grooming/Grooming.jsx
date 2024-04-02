@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'reactstrap';
 import grproduct1 from '../Grooming/Images/GRProduct1.avif';
 import grproduct2 from '../Grooming/Images/GRProduct2.avif';
 import grproduct3 from '../Grooming/Images/GRProduct3.avif';
@@ -11,16 +10,16 @@ export default function Grooming() {
     return (
         <>
             <div className='flex flex-row justify-center gap-6 mt-10'>
-                <div className="grid rounded-lg shadow-lg w-52 h-100 place-content-center hover:bg-gradient-to-r from-gray-400">
+                <div className="grid rounded-lg shadow-lg w-52 place-content-center hover:bg-gradient-to-r from-gray-400">
                     <div>
                         <h5 className="text-xl font-bold text-center uppercase">
                             grooming
                         </h5>
-                        <Button
+                        <button
                             className="w-40 h-12 my-5 font-bold text-white uppercase bg-red-800 border-none rounded-full"
                         >
                             explore
-                        </Button>
+                        </button>
                         <div className="flex mt-4">
                             <span className="mr-4">
                                 <ChevronLeft />
@@ -57,11 +56,11 @@ export default function Grooming() {
                         <p className='text-gray-500'>
                             (Inclusive of all taxes)
                         </p>
-                        <Button
+                        <button
                             className="h-12 my-5 font-bold text-white uppercase bg-red-800 border-none rounded-full w-60"
                         >
                             add to cart
-                        </Button>
+                        </button>
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
@@ -91,11 +90,11 @@ export default function Grooming() {
                         <p className='text-gray-500'>
                             (Inclusive of all taxes)
                         </p>
-                        <Button
+                        <button
                             className="h-12 my-5 font-bold text-white uppercase bg-red-800 border-none rounded-full w-60"
                         >
                             add to cart
-                        </Button>
+                        </button>
                     </div>
                 </div>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">
@@ -124,11 +123,11 @@ export default function Grooming() {
                         <p className='text-gray-500'>
                             (Inclusive of all taxes)
                         </p>
-                        <Button
+                        <button
                             className="h-12 my-5 font-bold text-white uppercase bg-red-800 border-none rounded-full w-60"
                         >
                             add to cart
-                        </Button>
+                        </button>
                     </div>
                 </div>
             </div>

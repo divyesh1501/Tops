@@ -8,7 +8,7 @@ import NewArrivals from './NewArrivals/NewArrivals';
 
 export default function Category() {
     return (
-        <div className="flex flex-col card">
+        <div className="flex flex-col">
             <div className='flex justify-center w-full my-5 bg-black'>
                 <h1 className='my-2 text-4xl font-bold text-white uppercase'>wild stone products</h1>
                 <div className='flex justify-end'>
