@@ -9,6 +9,8 @@ import Count from './UI/pages/count';
 import Amount from './UI/pages/Amount';
 import Point from './UI/pages/point';
 import InputData from './UI/pages/InputData';
+import { PostApi } from './Services/PostApi';
+import ApiData from './Services/apiData';
 
 function App() {
 
@@ -16,11 +18,13 @@ function App() {
     <>
       <Provider store={store}>
         <div>
-        {/* <div className='d-flex gap-3 justify-content-center'> */}
-        {/* <Count /> */}
-        {/* <Amount /> */}
-        {/* <Point /> */}
-        <InputData />
+          {/* <div className='d-flex gap-3 justify-content-center'> */}
+          {/* <Count /> */}
+          {/* <Amount /> */}
+          {/* <Point /> */}
+          {/* <InputData /> */}
+          {/* <PostApi /> */}
+          <ApiData />
         </div>
       </Provider>,
     </>
