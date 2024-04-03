@@ -29,7 +29,7 @@ export default function ProductForm({ toggle, productData, updateHandler, submit
     }, [productData])
 
     const showCategory = (selected) => {
-        setAddProduct({ ...addProduct, category: select });
+        setAddProduct({ ...addProduct, category: selected });
     };
 
     const handleDiscountChange = (e) => {

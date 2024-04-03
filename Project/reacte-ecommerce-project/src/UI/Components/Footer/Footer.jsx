@@ -52,10 +52,10 @@ export default function Footer() {
                         />
                         <Button className='uppercase !bg-red-800 font-bold text-white rounded-full p-3 my-3 w-80'>Subscribe</Button>
                         <ul className='flex justify-between my-6'>
-                            <NavLink to={''} className='hover:scale-110'><li><Facebook /></li></NavLink>
-                            <NavLink to={''} className='hover:scale-110'><li><Instagram /></li></NavLink>
-                            <NavLink to={''} className='hover:scale-110'><li><Youtube /></li></NavLink>
-                            <NavLink to={''} className='hover:scale-110'><li><Twitter /></li></NavLink>
+                            <li className='hover:scale-110' role='button'><Facebook /></li>
+                            <li className='hover:scale-110' role='button'><Instagram /></li>
+                            <li className='hover:scale-110' role='button'><Youtube /></li>
+                            <li className='hover:scale-110' role='button'><Twitter /></li>
                         </ul>
                     </Form>
                     <p className='text-xs text-gray-600'>&copy;McNROE Consumer Products Pvt Ltd. All rights reserved.</p>

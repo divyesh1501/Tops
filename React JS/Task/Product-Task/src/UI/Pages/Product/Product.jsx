@@ -47,9 +47,9 @@ export default function Product() {
       data: data,
     }).then((res) => {
       toast.success("Product Added Succesfully");
-      setAddProduct(initialData);
-      reFetchData()
       toggle();
+      reFetchData()
+      setAddProduct(initialData);
     })
       .catch((err) => {
         toast.error(err.response)
@@ -66,9 +66,9 @@ export default function Product() {
     })
       .then((res) => {
         toast.success("Product Updated Succesfully");
-        setAddProduct(initialData);
-        reFetchData()
         toggle();
+        reFetchData()
+        setAddProduct(initialData);
       })
       .catch((err) => {
         toast.error(err.response);

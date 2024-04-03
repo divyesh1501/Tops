@@ -3,7 +3,7 @@ function NonIdiomaticList(props) {
     let array = [];
     for(let i = 0; i < props.items.length; i++) {
       array.push(
-        <Item key={i} item={props.items[i]} />
+        <Item key={i} items={props.items[i]} />
       );
     }
   
