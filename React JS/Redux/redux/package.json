@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.1.0",
+    "@reduxjs/toolkit": "^2.2.3",
     "bootstrap": "^5.3.2",
     "combine-reducers": "^1.0.0",
     "lucide-react": "^0.323.0",
