@@ -1,6 +1,11 @@
+import axios from 'axios';
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Modal, ModalHeader} from 'reactstrap';
 import Swal from 'sweetalert2'
+import { BE_URL } from '../../../../Config';
+import { toast } from 'react-toastify';
+import { useCookies } from 'react-cookie';
+import { useForm } from "react-hook-form";
 
 const intialData = {
     email: "",
@@ -15,80 +20,62 @@ export default function LoginModal({ logModal, logToggle, regtoggle }) {
     }
 
 
+    const { register, handleSubmit, formState: { errors }, } = useForm()
     let [loginData, setLoginData] = useState(intialData);
+    let [cookies, setCookie] = useCookies([]);
 
-    const loginUser = (e) => {
-        e.preventDefault();
+
+
+    const loginUser = (data) => {
+        console.log("🚀 ~ loginUser ~ data:", data)
+        console.log("======")
+
         axios({
             method: "post",
             url: `${BE_URL}/user/signin`,
-            data: loginData
+            data: data
         })
             .then((res) => {
                 setCookie("user", res?.data?.data);
                 setCookie("token", res?.data?.data);
-                console.log("🚀 ~ Registration successful:", res);
-                toast.success("LogIn successfully..!!");
-                setLoginData(intialData);
+                console.log("🚀 ~ login", res);
                 logToggle(); // Close the modal after successful registration
             })
             .catch((err) => {
                 toast.error("Denied Access failed. Please try again later.");
             });
-    
-};
 
-return (
-    <>
-        <div>
+    };
 
+    return (
+        <>
             <Modal isOpen={logModal} toggle={logToggle}>
-                <ModalHeader toggle={logToggle}>Sign In User</ModalHeader>
-                <ModalBody>
-                    <Form>
-                        <FormGroup>
-                            <Label for="exampleUserName">
-                                Email
-                            </Label>
-                            <Input
-                                id="email"
-                                value={loginData.email}
-                                name="email"
-                                placeholder="Enter a Email"
-                                type="email"
-                                onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
+                <ModalHeader toggle={logToggle}>Login Form</ModalHeader>
+                <div className='flex flex-col w-96 h-96 m-auto items-center justify-center'>
+                    <form onSubmit={handleSubmit(loginUser)}>
+                        <div className='flex flex-col gap-3'>
+                            <label htmlFor="email" className='font-bold'>Email</label>
+                            <input type="text"
+                                id='email'
+                                className='border border-black'
+                                {...register("email", { required: "Email is required" })} />
 
-                            />
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="examplePassword">
-                                Password
-                            </Label>
-                            <Input
-                                id="examplePassword"
-                                value={loginData.password}
-                                name="password"
-                                placeholder="Enetr password"
-                                type="password"
-                                onChange={(e) => { setLoginData({ ...loginData, password: e.target.value }) }}
+                            {errors.email && (<p>{errors?.email?.message}</p>)}
+                            <label htmlFor="password" className='font-bold'>Password</label>
+                            <input type="password"
+                                id='email'
+                                className='border border-black'
+                                {...register("password", { required: "Password is required" })} />
 
-                            />
-                        </FormGroup>
+                            {errors.password && (<p>{errors?.password?.message}</p>)}
+                        </div>
                         <p>Don't have a account Creat account <span role='button' onClick={creartaccount} style={{ color: "Blue" }}>Click Here!</span></p>
-
-                    </Form>
-                </ModalBody>
-
-                <ModalFooter>
-                    <Button color="primary" onClick={loginUser}>
-                        SignIn
-                    </Button>{' '}
-                    <Button color="secondary" onClick={logToggle}>
-                        Cancel
-                    </Button>
-                </ModalFooter>
+                        <div>
+                            <button className='mt-3 h-8 w-20 border border-black bg-slate-500 rounded-md'>Sign In</button>
+                        </div>
+                    </form>
+                </div>
             </Modal>
-        </div>
-    </>
-);
+        </>
+    );
 }

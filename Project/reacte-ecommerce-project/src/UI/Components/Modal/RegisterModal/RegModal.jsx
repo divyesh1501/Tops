@@ -20,7 +20,7 @@ const initialAddressData = {
   pinCode: "",
 };
 
-export default function UserModal({ regModal, regToggle }) {
+export default function RegModal({ regModal, regToggle }) {
   const [data, setData] = useState(initialData);
   const [addressData, setAddressData] = useState(initialAddressData);
   const [cookies, setCookie] = useCookies();
@@ -57,13 +57,12 @@ export default function UserModal({ regModal, regToggle }) {
 
   return (
     <div>
-      {/* <Button onClick={regToggle}>Open Register Form</Button> */}
       <Modal isOpen={regModal} toggle={regToggle}>
         <ModalHeader toggle={regToggle}>Register Form</ModalHeader>
         <ModalBody>
           <Form>
             <FormGroup>
-              <Label for="name">User Name</Label>
+              <Label for="name">Name</Label>
               <Input
                 type="text"
                 id="name"
@@ -71,15 +70,7 @@ export default function UserModal({ regModal, regToggle }) {
                 onChange={(e) => setData({ ...data, name: e?.target?.value })}
               />
             </FormGroup>
-            {/* <FormGroup>
-              <Label for="email">Email</Label>
-              <Input
-                type="text"
-                id="email"
-                value={data.email}
-                onChange={(e) => setData({ ...data, email: e?.target?.value })}
-              />
-            </FormGroup> */}
+
             <FormGroup>
               <Label for="email">Email</Label>
               <Input
@@ -126,15 +117,7 @@ export default function UserModal({ regModal, regToggle }) {
                 onChange={(e) => setData({ ...data, age: e?.target?.value })}
               />
             </FormGroup>
-            {/* <FormGroup>
-              <Label for="address">Address</Label>
-              <Input
-                type="text"
-                id="address"
-                value={addressData.address}
-                onChange={(e) => setAddressData({ ...addressData, address: e?.target?.value })}
-              />
-            </FormGroup> */}
+            
             <FormGroup>
               <Label for="city">City</Label>
               <Input
@@ -172,3 +155,5 @@ export default function UserModal({ regModal, regToggle }) {
     </div>
   );
 }
+
+

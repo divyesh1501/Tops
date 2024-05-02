@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { Button, Navbar, NavbarBrand } from "reactstrap";
 import { ChevronDown, CircleUser, Heart, Search, ShoppingCart, User, UserCircle } from "lucide-react";
 import wlogo from "../Header/Images/wild-stone.avif";
-import UserModal from '../Modal/RegisterModal/UserModal';
+import RegModal from '../Modal/RegisterModal/RegModal';
 import LoginModal from '../Modal/LoginModal/LoginModal';
 import { useCookies } from 'react-cookie';
 
@@ -15,6 +15,12 @@ export default function Header() {
     const [cookies, setCookies] = useCookies(["user", "token"])
     console.log("🚀 ~ Header ~ cookies:", cookies)
 
+    function navProfile() {
+        navigate('/profile');
+    }
+    function navCart() {
+        navigate('/cart');
+    }
 
     let navigate = useNavigate()
     return (
@@ -54,17 +60,17 @@ export default function Header() {
                         <Search role='button' />
                         <Heart role='button' />
                         {
-                            cookies.user ? <UserCircle onClick={navigate("/profile")} /> :
+                            cookies.user ? <UserCircle onClick={navProfile} /> :
                                 <User role='button' onClick={logtoggle} />
                         }
-                        <ShoppingCart role='button' />
+                        <ShoppingCart role='button' onClick={navCart} />
                     </div>
 
 
                 </div>
             </Navbar>
 
-            <UserModal regModal={regmodal} regToggle={regtoggle} logtoggle={logtoggle} />
+            <RegModal regModal={regmodal} regToggle={regtoggle} logtoggle={logtoggle} />
             <LoginModal logModal={logmodal} logToggle={logtoggle} regtoggle={regtoggle} />
         </>
     )

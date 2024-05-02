@@ -22,18 +22,19 @@ export default function Profile() {
         <>
             <div className='flex items-center  flex-col border'>
                 <div className='flex items-center justify-center flex-col'>
-                    <h1>User Deatils</h1>
+                    <h1><ul>User Details</ul></h1>
                     <img src={user} alt="" className='w-44 h-44' />
                 </div>
                 <div className=''>
-                    <ul className='leading-10'>
-                        <li tag={Heading5}>Name:{userData.name}</li>
-                        <li tag={Heading5}>Email:{userData.email}</li>
-                        <li tag={Heading5}>Number:{userData.number}</li>
-                        <li tag={Heading5}>Age:{userData.age}</li>
-                    </ul>
+                    <h3 className='my-3'><strong>Name</strong> : {userData.name}</h3>
+                    <hr />
+                    <h3 className='my-3'><strong>Email</strong> : {userData.email}</h3>
+                    <hr />
+                    <h3 className='my-3'><strong>Number</strong> : {userData.number}</h3>
+                    <hr />
+                    <h3 className='my-3'><strong>Age</strong> : {userData.age}</h3>
                 </div>
-                <Button onClick={logoutHandler}>Log Out</Button>
+                <Button onClick={logoutHandler} className='!bg-red-700 border-0 w-52 my-10'>Log Out</Button>
             </div>
         </>
     )

@@ -104,18 +104,6 @@ export default function FeedAndTrendSlider() {
             >
                 <video autoPlay loop src={videos[selectedVideoIndex]}></video>
             </Modal>
-            {/* <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel="Video Modal"
-                className="fixed inset-0 flex items-center justify-center"
-                overlayClassName="fixed inset-0 bg-black opacity-50"
-            >
-                <div className="bg-transparent border-none p-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md max-h-full overflow-hidden">
-                    <video className="w-full h-auto" autoPlay loop src={videos[selectedVideoIndex]}></video>
-                </div>
-            </Modal> */}
-
 
             <div className="absolute left-0 mx-10 transform -translate-y-1/2 top-72">
                 <button onClick={goToPrev} className="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><ChevronLeft size={24} color="#444" /></button>

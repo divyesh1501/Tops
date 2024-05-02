@@ -52,10 +52,10 @@ export default function Footer() {
                         />
                         <Button className='uppercase !bg-red-800 font-bold text-white rounded-full p-3 my-3 w-80'>Subscribe</Button>
                         <ul className='flex justify-between my-6'>
-                            <li className='hover:scale-110' role='button'><Facebook /></li>
-                            <li className='hover:scale-110' role='button'><Instagram /></li>
-                            <li className='hover:scale-110' role='button'><Youtube /></li>
-                            <li className='hover:scale-110' role='button'><Twitter /></li>
+                            <a className='hover:scale-110 text-black' role='button' href='https://m.facebook.com/wildstoneofficial?locale2=ru_RU' target="_blank"><Facebook /></a>
+                            <a className='hover:scale-110 text-black' role='button' href='https://www.instagram.com/wildstoneofficial/?hl=en' target="_blank"><Instagram /></a>
+                            <a className='hover:scale-110 text-black' role='button' href='https://www.youtube.com/@wildstoneofficial' target="_blank"><Youtube /></a>
+                            <a className='hover:scale-110 text-black' role='button' href='https://twitter.com/wildstoneindia?lang=en' target="_blank"><Twitter /></a>
                         </ul>
                     </Form>
                     <p className='text-xs text-gray-600'>&copy;McNROE Consumer Products Pvt Ltd. All rights reserved.</p>

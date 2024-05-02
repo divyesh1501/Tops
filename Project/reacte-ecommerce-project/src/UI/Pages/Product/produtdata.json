@@ -1,0 +1,1029 @@
+[
+    {
+        "title": "Wild Stone Hydra Energy Perfume, 120ml",
+        "description": "Refreshing and vibrant, Hydra Energy is infused with aquatic and zesty notes that energize every moment. Ideal for day wear, this perfume keeps you fresh on the go.",
+        "price": 650,
+        "discountPercentage": 20,
+        "stock": 55,
+        "category": [
+            "perfume",
+            "daywear"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "white"
+        ],
+        "thumbnail": "https://www.wildstone.in/cdn/shop/files/ultra100ml_1.jpg?v=1695879969"
+    },
+    {
+        "title": "Wild Stone Forest Spice Deodorant, 150ml",
+        "description": "Experience the fresh, raw fragrance of forest essentials. Wild Stone Forest Spice deodorant is crafted for the adventurous spirit and is perfect for everyday challenges.",
+        "price": 290,
+        "discountPercentage": 15,
+        "stock": 75,
+        "category": [
+            "deodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "brown",
+            "green"
+        ]
+    },
+    {
+        "title": "Wild Stone Thunder Perfume, 100ml",
+        "description": "Unleash your potential with Thunder, a robust blend of spicy and woody notes that command attention. Ideal for evenings, it sets the stage for an unforgettable presence.",
+        "price": 720,
+        "discountPercentage": 25,
+        "stock": 40,
+        "category": [
+            "perfume",
+            "eveningwear"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "black",
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Titanium Body Perfume, 120ml",
+        "description": "Sleek and powerful, Code Titanium offers a sophisticated mix of musky and floral aromas that appeal to the modern man. Perfect for professionals, it ensures you smell great all day.",
+        "price": 490,
+        "discountPercentage": 30,
+        "stock": 60,
+        "category": [
+            "bodyperfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "gray"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Marine Perfume, 80ml",
+        "description": "Dive into the depths of the ocean with Ultra Marine Perfume, featuring fresh marine notes mixed with citrus and spice. A perfect companion for your summer escapades.",
+        "price": 575,
+        "discountPercentage": 22,
+        "stock": 50,
+        "category": [
+            "perfume",
+            "summer"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Night Rider Perfume, 100ml",
+        "description": "For the man who owns the night, Night Rider is a daring blend of amber and peppermint notes, designed to evoke mystery and allure.",
+        "price": 699,
+        "discountPercentage": 20,
+        "stock": 35,
+        "category": [
+            "perfume",
+            "nightscent"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "black",
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Edge Perfume, 90ml",
+        "description": "Cutting edge and distinct, Edge Perfume combines herbal notes with a hint of citrus zest, ideal for making a bold statement at work or play.",
+        "price": 610,
+        "discountPercentage": 18,
+        "stock": 48,
+        "category": [
+            "perfume",
+            "signature"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "green",
+            "yellow"
+        ]
+    },
+    {
+        "title": "Wild Stone Legend Deodorant, 150ml",
+        "description": "Live the legend with this charismatic blend of aromatic and woody notes. The perfect choice for those who lead by example.",
+        "price": 280,
+        "discountPercentage": 12,
+        "stock": 80,
+        "category": [
+            "deodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "red",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Copper Perfume, 50ml",
+        "description": "Radiate warmth and confidence with Copper Perfume, a luxurious mix of spicy and woody notes. Its compact size makes it an ideal travel companion.",
+        "price": 430,
+        "discountPercentage": 35,
+        "stock": 50,
+        "category": [
+            "perfume",
+            "travel"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "copper"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Gold Body Perfume, 150ml",
+        "description": "Exuding opulence and sophistication, Code Gold is for the man who transcends expectations with grace and style. Perfect for special occasions.",
+        "price": 550,
+        "discountPercentage": 25,
+        "stock": 45,
+        "category": [
+            "bodyperfume",
+            "luxury"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Red Perfume, 100ml",
+        "description": "Capture the essence of passion with Red Perfume, a powerful combination of fruity and spicy notes that leaves a memorable impression.",
+        "price": 600,
+        "discountPercentage": 10,
+        "stock": 55,
+        "category": [
+            "perfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "red"
+        ]
+    },
+    {
+        "title": "Wild Stone Aqua Fresh Deodorant, 150ml",
+        "description": "Stay refreshed and cool with Aqua Fresh deodorant, featuring notes of sea breeze and a hint of citrus. Perfect for a hot summer day.",
+        "price": 299,
+        "discountPercentage": 15,
+        "stock": 70,
+        "category": [
+            "deodorant",
+            "summer"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Silver Shadow Perfume, 100ml",
+        "description": "Step into the limelight with Silver Shadow, an enchanting mix of floral and woody notes. Designed for the man who captivates with ease.",
+        "price": 650,
+        "discountPercentage": 20,
+        "stock": 30,
+        "category": [
+            "perfume",
+            "eveningwear"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Musk Perfume, 75ml",
+        "description": "Embrace classic charm with Musk Perfume, a timeless scent featuring earthy tones blended with a hint of leather, ideal for the traditional man.",
+        "price": 520,
+        "discountPercentage": 15,
+        "stock": 45,
+        "category": [
+            "perfume",
+            "classic"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "brown"
+        ]
+    },
+    {
+        "title": "Wild Stone Hydra Energy Body Wash, 200ml",
+        "description": "Invigorate your senses with the refreshing notes of Hydra Energy body wash. Enriched with moisturizers, it leaves your skin smooth and fragrant.",
+        "price": 250,
+        "discountPercentage": 10,
+        "stock": 80,
+        "category": [
+            "bodywash"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Chrome Perfume, 100ml",
+        "description": "Modern and refined, Chrome Perfume offers a crisp blend of citrus and wood, encapsulating the essence of a man who appreciates the finer things.",
+        "price": 670,
+        "discountPercentage": 25,
+        "stock": 30,
+        "category": [
+            "perfume",
+            "luxury"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Ocean Perfume, 120ml",
+        "description": "Breathe in the freshness of the ocean with this light and airy scent, ideal for daily wear and for those who love a subtle yet memorable fragrance.",
+        "price": 560,
+        "discountPercentage": 15,
+        "stock": 60,
+        "category": [
+            "perfume",
+            "daywear"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Iron Perfume, 90ml",
+        "description": "Robust and powerful, Iron Perfume is a fusion of metallic and fresh notes, crafting a dynamic aroma for the modern man on the move.",
+        "price": 630,
+        "discountPercentage": 22,
+        "stock": 40,
+        "category": [
+            "perfume",
+            "modern"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "gray"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultimate Perfume, 50ml",
+        "description": "Achieve the ultimate in sophistication with this refined blend of exotic spices and rich wood, designed for the cosmopolitan man.",
+        "price": 720,
+        "discountPercentage": 18,
+        "stock": 35,
+        "category": [
+            "perfume",
+            "exotic"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Platinum Body Perfume, 150ml",
+        "description": "Code Platinum is a luxurious body perfume with a mix of earthy and citrus notes, perfect for those who command respect and admiration.",
+        "price": 490,
+        "discountPercentage": 20,
+        "stock": 55,
+        "category": [
+            "bodyperfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "platinum"
+        ]
+    },
+    {
+        "title": "Wild Stone Jade Perfume, 100ml",
+        "description": "Jade Perfume exudes a calm yet powerful aura with its blend of woody and green notes, perfect for the man who is both grounded and ambitious.",
+        "price": 610,
+        "discountPercentage": 15,
+        "stock": 50,
+        "category": [
+            "perfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "green"
+        ]
+    },
+    {
+        "title": "Wild Stone Bronze Perfume, 75ml",
+        "description": "Bold and distinctive, Bronze Perfume carries spicy and warm notes, encapsulating the essence of a trailblazer.",
+        "price": 550,
+        "discountPercentage": 12,
+        "stock": 45,
+        "category": [
+            "perfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "bronze"
+        ]
+    },
+    {
+        "title": "Wild Stone Quartz Perfume, 100ml",
+        "description": "Craft your own legacy with Quartz Perfume, a sophisticated mix of herbal and mild floral scents for the insightful and refined man.",
+        "price": 650,
+        "discountPercentage": 25,
+        "stock": 30,
+        "category": [
+            "perfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Citrus Blast Perfume, 120ml",
+        "description": "Feel the rush with Citrus Blast, a vibrant perfume that combines lemon zest with woody notes to energize your day in an instant.",
+        "price": 499,
+        "discountPercentage": 30,
+        "stock": 60,
+        "category": [
+            "perfume",
+            "daywear"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "yellow"
+        ]
+    },
+    {
+        "title": "Wild Stone Night Glow Deodorant, 150ml",
+        "description": "Glow through the night with this captivating blend of musk and spice, designed to keep you cool and confident till dawn.",
+        "price": 275,
+        "discountPercentage": 20,
+        "stock": 80,
+        "category": [
+            "deodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Steel Perfume, 90ml",
+        "description": "Forge your path with Steel Perfume, featuring a sharp blend of aromatic notes and a hint of citrus, embodying the strength and determination of the modern man.",
+        "price": 575,
+        "discountPercentage": 18,
+        "stock": 50,
+        "category": [
+            "perfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Dark Legend Soap, 125g",
+        "description": "Enrich your bathing experience with Dark Legend Soap, imbued with a rich, masculine scent that leaves your skin cleansed and perfumed.",
+        "price": 120,
+        "discountPercentage": 10,
+        "stock": 90,
+        "category": [
+            "soap"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "dark"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Marine Perfume, 100ml",
+        "description": "Dive into the depths of the sea with Ultra Marine Perfume, where aquatic notes meet a refreshing splash of citrus, creating a vibrant essence.",
+        "price": 599,
+        "discountPercentage": 20,
+        "stock": 60,
+        "category": [
+            "perfume",
+            "fresh"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Copper Perfume, 100ml",
+        "description": "Embrace the warmth of Copper Perfume, combining spicy notes with a hint of tobacco for a scent that is uniquely captivating and bold.",
+        "price": 640,
+        "discountPercentage": 20,
+        "stock": 40,
+        "category": [
+            "perfume"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "copper"
+        ]
+    },
+    {
+        "title": "Wild Stone Gold Perfume, 100ml",
+        "description": "Gold Perfume is the epitome of luxury and opulence, with deep, rich scents of oud and amber setting a regal tone for those who wear it.",
+        "price": 750,
+        "discountPercentage": 15,
+        "stock": 30,
+        "category": [
+            "perfume",
+            "luxury"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Thunder Deodorant, 150ml",
+        "description": "Unleash the power with Thunder Deodorant, designed to keep you fresh and invigorated throughout the day with its robust, spicy notes.",
+        "price": 210,
+        "discountPercentage": 15,
+        "stock": 70,
+        "category": [
+            "deodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "grey"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Marine Deodorant, 150ml",
+        "description": "Dive into deep freshness with marine accents suitable for all seasons. The fresh aquatic notes invigorate and refresh your senses, reflecting a dynamic and adventurous personality.",
+        "price": 230,
+        "discountPercentage": 20,
+        "stock": 35,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Forest Spice Deodorant, 150ml",
+        "description": "Immerse yourself in the essence of wild spices. Ideal for outdoor enthusiasts, its spicy and earthy notes inspire a rugged, masculine vibe.",
+        "price": 240,
+        "discountPercentage": 15,
+        "stock": 50,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "brown",
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Thunder Deodorant, 150ml",
+        "description": "Feel the power of thunder with this electrifying fragrance. Perfect for the energetic man, its vibrant and bold notes ensure you stand out.",
+        "price": 220,
+        "discountPercentage": 18,
+        "stock": 40,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "grey",
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Titanium Body Perfume, 120ml",
+        "description": "Crafted for the modern man, this body perfume offers a long-lasting titanium freshness that accompanies you through busy urban life.",
+        "price": 310,
+        "discountPercentage": 22,
+        "stock": 30,
+        "category": [
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "black",
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Gold Body Perfume, 120ml",
+        "description": "A luxurious fragrance that wraps you in the allure of gold. Its rich and opulent notes make it perfect for evening socials and formal events.",
+        "price": 320,
+        "discountPercentage": 25,
+        "stock": 20,
+        "category": [
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "gold",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Night Rider Deodorant, 150ml",
+        "description": "For the man who commands the night, this deodorant's deep musky tones set the tone for evening adventures.",
+        "price": 215,
+        "discountPercentage": 12,
+        "stock": 25,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "black",
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Hydra Energy Deodorant Combo Pack (150 ml Each)",
+        "description": "Stay energized with Hydra Energy, perfect for men who face the day head-on. Its citrus notes are refreshing and invigorating.",
+        "price": 430,
+        "discountPercentage": 30,
+        "stock": 45,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "green"
+        ]
+    },
+    {
+        "title": "Wild Stone Red Deodorant Combo Pack (150 ml Each)",
+        "description": "Ignite passion with Wild Stone Red, featuring warm, spicy notes that are both provocative and masculine.",
+        "price": 460,
+        "discountPercentage": 28,
+        "stock": 22,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "red",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Legend Deodorant, 150ml",
+        "description": "Experience the robust freshness that fits for every Indian weather. The woody and aromatic notes relax and calms the senses and exudes a classy, timeless persona that is so characteristic of Wild Stone Legend.",
+        "price": 225,
+        "discountPercentage": 25,
+        "stock": 42,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "green",
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Legend Deodorant Combo Pack (150 ml Each)",
+        "description": "Experience the robust freshness that fits for every Indian weather. The woody and aromatic notes relax and calms the senses and exudes a classy, timeless persona that is so characteristic of Wild Stone Legend.",
+        "price": 450,
+        "discountPercentage": 30,
+        "stock": 40,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "green",
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Copper Deodorant, 150ml",
+        "description": "Channel the power of copper with this deodorant, which offers a unique metallic twist to the daily fragrance. Its bold, distinctive scent ensures lasting impression.",
+        "price": 250,
+        "discountPercentage": 18,
+        "stock": 35,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "copper",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Musk Deodorant, 150ml",
+        "description": "Indulge in the luxury of musk, a fragrance that embodies sophistication and elegance. Ideal for the man who appreciates finer details.",
+        "price": 240,
+        "discountPercentage": 20,
+        "stock": 40,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "grey",
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Chrome Deodorant, 150ml",
+        "description": "Reflect your sleek and sharp personality with Chrome, a deodorant that mirrors the coolness of metal. It's perfect for daily wear, ensuring you feel fresh and confident.",
+        "price": 220,
+        "discountPercentage": 15,
+        "stock": 50,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "silver",
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Iron Deodorant, 150ml",
+        "description": "Harness the strength of iron with this robust deodorant. It's designed for men who engage in active physical endeavors and need a scent that keeps up.",
+        "price": 225,
+        "discountPercentage": 22,
+        "stock": 45,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "grey",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Platinum Deodorant, 150ml",
+        "description": "A touch of luxury with every spray, Platinum is crafted for the elite man. Its sophisticated floral and woody notes make it ideal for business and pleasure.",
+        "price": 280,
+        "discountPercentage": 20,
+        "stock": 30,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "grey",
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Aqua Fresh Deodorant Combo Pack (150 ml Each)",
+        "description": "Stay cool with Aqua Fresh, a deodorant combo that offers a wave of oceanic fragrances. Ideal for summer days and active lifestyles.",
+        "price": 425,
+        "discountPercentage": 25,
+        "stock": 20,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Titanium Deodorant Combo Pack (150 ml Each)",
+        "description": "Experience the strong, metallic scent of Titanium in this combo pack. Designed for men who demand durability and performance in their fragrance.",
+        "price": 470,
+        "discountPercentage": 30,
+        "stock": 25,
+        "category": [
+            "gasdeodorant",
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "grey",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Quantum Deodorant, 150ml",
+        "description": "Embrace the essence of energy with Quantum, a fragrance that embodies dynamic movements and high-speed lifestyles.",
+        "price": 215,
+        "discountPercentage": 18,
+        "stock": 45,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "red",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Steel Deodorant, 150ml",
+        "description": "Crafted for the resilient man, Steel offers a solid, robust fragrance that mirrors the strength of the material itself.",
+        "price": 235,
+        "discountPercentage": 15,
+        "stock": 35,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "silver",
+            "grey"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Sensual Deodorant, 150ml",
+        "description": "Feel the allure of the Ultra Sensual deodorant, a captivating scent that's both invigorating and seductive, perfect for romantic evenings.",
+        "price": 260,
+        "discountPercentage": 12,
+        "stock": 40,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "red",
+            "gold"
+        ]
+    },
+    {
+        "title": "Wild Stone Gold Deodorant, 150ml",
+        "description": "Gold exudes opulence and class, making this deodorant a perfect choice for the distinguished man who loves luxury.",
+        "price": 250,
+        "discountPercentage": 18,
+        "stock": 30,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "gold",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Silver Body Perfume, 120ml",
+        "description": "Code Silver is designed for the man who wants to ensure a fresh, crisp presence. With its cool metallic notes, it's perfect for daytime wear.",
+        "price": 320,
+        "discountPercentage": 25,
+        "stock": 25,
+        "category": [
+            "nogasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "silver",
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Blaze Deodorant, 150ml",
+        "description": "Blaze a trail with this fiery deodorant, designed for men who lead an intense, dynamic life. Its spicy, hot notes ignite energy.",
+        "price": 240,
+        "discountPercentage": 20,
+        "stock": 50,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "orange",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Drift Deodorant, 150ml",
+        "description": "Designed for the adventurous spirit, Drift combines fresh, airy notes with a hint of spice, perfect for explorers.",
+        "price": 215,
+        "discountPercentage": 15,
+        "stock": 40,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "white"
+        ]
+    },
+    {
+        "title": "Wild Stone Edge Deodorant, 150ml",
+        "description": "Get the Edge with this sharp, cutting-edge fragrance designed for men who aim to succeed. Its confident, assertive aroma commands attention.",
+        "price": 235,
+        "discountPercentage": 18,
+        "stock": 45,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "green",
+            "black"
+        ]
+    },
+    {
+        "title": "Wild Stone Neptune Deodorant, 150ml",
+        "description": "Embark on a celestial journey with Neptune, a scent inspired by the mysteries of the outer planets. Its cool, etherial notes are perfect for the man who looks beyond.",
+        "price": 260,
+        "discountPercentage": 22,
+        "stock": 35,
+        "category": [
+            "gasdeodorant"
+        ],
+        "mainCategorie": "men",
+        "color": [
+            "blue",
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Hydra Energy Face Wash, 100ml",
+        "description": "Deep cleansing face wash for refreshed and energized skin.",
+        "price": 120,
+        "discountPercentage": 15,
+        "stock": 55,
+        "category": [
+            "face wash"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "green"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Titanium Body Perfumed Talc, 300gm",
+        "description": "Stay cool and confident with this finely fragranced talcum powder.",
+        "price": 150,
+        "discountPercentage": 10,
+        "stock": 30,
+        "category": [
+            "talc"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "silver"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Sensual Soap, 125gm",
+        "description": "Rich foaming soap with a sensual fragrance to kick start your day.",
+        "price": 45,
+        "discountPercentage": 12,
+        "stock": 75,
+        "category": [
+            "soap"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "red"
+        ]
+    },
+    {
+        "title": "Wild Stone Forest Spice Shaving Cream, 70g",
+        "description": "Creamy shaving cream for a smooth shave, leaving a scent of spice.",
+        "price": 80,
+        "discountPercentage": 20,
+        "stock": 50,
+        "category": [
+            "shaving cream"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "brown"
+        ]
+    },
+    {
+        "title": "Wild Stone Copper Face Wash, 80ml",
+        "description": "Rejuvenating face wash with micro-granules to prevent acne.",
+        "price": 110,
+        "discountPercentage": 18,
+        "stock": 65,
+        "category": [
+            "face wash"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "copper"
+        ]
+    },
+    {
+        "title": "Wild Stone Edge Talc, 250gm",
+        "description": "A musky scent talc that keeps you fresh all day.",
+        "price": 140,
+        "discountPercentage": 25,
+        "stock": 40,
+        "category": [
+            "talc"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Sensual Shaving Cream, 100g",
+        "description": "Luxurious shaving cream with a fragrance that energizes.",
+        "price": 90,
+        "discountPercentage": 22,
+        "stock": 48,
+        "category": [
+            "shaving cream"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "red"
+        ]
+    },
+    {
+        "title": "Wild Stone Thunder Soap, 150gm",
+        "description": "Invigorating soap with a refreshing scent to boost your morning.",
+        "price": 55,
+        "discountPercentage": 15,
+        "stock": 90,
+        "category": [
+            "soap"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "blue"
+        ]
+    },
+    {
+        "title": "Wild Stone Chrome Face Wash, 60ml",
+        "description": "Face wash for oily skin that controls shine and clears pores.",
+        "price": 85,
+        "discountPercentage": 17,
+        "stock": 80,
+        "category": [
+            "face wash"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "grey"
+        ]
+    },
+    {
+        "title": "Wild Stone Code Lime Fresh Soap, 100gm",
+        "description": "Energizing citrus soap that leaves your skin feeling fresh and clean.",
+        "price": 40,
+        "discountPercentage": 10,
+        "stock": 65,
+        "category": [
+            "soap"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "green"
+        ]
+    },
+    {
+        "title": "Wild Stone Ultra Platinum Talc, 200gm",
+        "description": "Premium talc with a fresh scent to keep skin smooth and refreshed.",
+        "price": 135,
+        "discountPercentage": 20,
+        "stock": 38,
+        "category": [
+            "talc"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "grey"
+        ]
+    },
+    {
+        "title": "Wild Stone Hydra Energy Shaving Cream, 50g",
+        "description": "Hydrating shaving cream that protects and nourishes the skin.",
+        "price": 70,
+        "discountPercentage": 25,
+        "stock": 60,
+        "category": [
+            "shaving cream"
+        ],
+        "mainCategory": "men",
+        "color": [
+            "blue"
+        ]
+    }
+]

@@ -19,7 +19,6 @@ export default function HomePage() {
       <ManGuide />
       <Policeis />
       <AboutWS />
-      {/* <h1>Hwllo worldnpm </h1> */}
     </>
   )
 }
