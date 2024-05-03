@@ -1,0 +1,162 @@
+Soft-Skill AssignMent
+
+Module 1) Personal Information
+
+Hey, I'm Divyesh Patel! I'm from Valsad. After studying science and working in banking for a bit, I realized I love solving problems and being creative. So, I decided to switch to IT. Right now, I'm learning how to build websites at Tops Technologies. My brother works in IT too, and he suggested this path to me. When I'm not studying, I'm out exploring new places and having adventures.
+
+Module 2) Technology
+
+I'm currently focused on upgrading my technology skills to excel in the IT field. To achieve this, I've enrolled in a Frontend Development course at Tops Technologies. This program covers essential skills and tools needed to build modern websites and applications, providing me with hands-on experience and practical knowledge. Additionally, I plan to pursue relevant certifications in web development frameworks like React or Angular to deepen my expertise and stay competitive in the job market.
+
+Continuous learning and professional development are integral parts of my approach. I believe in staying updated with the latest industry trends and advancements. To achieve this, I allocate time each week to explore online resources, such as tutorials, articles, and forums, to expand my knowledge base. I also actively participate in workshops, webinars, and networking events to connect with professionals in the field and gain insights into emerging technologies. By embracing a growth mindset and actively seeking opportunities for learning and skill enhancement, I aim to continuously evolve and thrive in the ever-changing IT landscape.
+
+Module 3) Projects
+
+1. To-Do-List
+Languages : React Js
+
+State Management:
+	-Use useState for 'pendingTasks', 'doneTasks', and 'taskInput'.
+Task Operations:
+	-Add, move, and remove tasks.
+	-Implement "Update" for modifying task text in 'pendingTasks'.
+
+2. React Login/Register Modal with Validation
+Languages : React Js
+
+User Authentication:
+	-Create a secure login/registration modal with client-side validation.
+	-Store user credentials in localStorage and establish an admin-protected route.
+
+User List Management:
+	-Develop a user list with role-based filtering.
+	-Enable dynamic display based on role and implement admin-only access.
+
+3. API INTEGRATION
+Languages : React Js
+
+API Integration Proficiency:
+	-Successfully integrated APIs into web projects for real-time data retrieval and manipulation.
+CRUD Operations:
+	-Implemented error handling, data validation, and CRUD operations for secure and stable API-driven data management in web 		 applications.
+	-Create a CURD operation to handle and store data in API.
+
+4. Responsive Travel Webpage Development
+Languages : HTML, CSS, Bootstrap
+
+Responsive Travel Webpage:
+	-Develop a responsive UI with Bootstrap, ensuring optimal display on various devices.
+Stylish Design with CSS:
+	-Apply CSS for an engaging and visually appealing interface, incorporating interactive elements and calls-to-action.
+
+
+Module 4) HR Questions
+
+
+1.Introduce yourself
+My Name is Divyesh Patel, I come from Valsad. Graduated in 2021 with a Bachelor of Science. Currently 
+pursuing Frontend Development from Tops Technologies. I like to travel and explore new places. When I
+am not involved in my academic responsibilities or other work, I am usually Travel or explore new places.
+
+2.Why did you choose this language?
+I have done my studies in Bachelor of science, and I have experience of 1.5 year in banking sector. Which 
+i learned about in real world problem-solving and analytical skills. I slightly interest in designing and 
+logical problem solving so there for I elect IT field. My brother already in IT sector so he suggested me 
+front end web development course at Tops Technologies.
+
+3.Explain your project.
+Already Mentioned.
+
+4.What do you know about our company?
+I know your company is into IT, and what caught my attention is how you guys are always using new and 
+cool technology. Like that [mention a project] thing – it sounds really interesting! I like how your team is 
+always coming up with smart ideas. I’m excited about the chance to be part of such a tech-savvy 
+company and bring my skills to the table.
+
+5.What are your strengths?
+My strength lies in my ability to work effectively under pressure, managing tasks efficiently and 
+maintaining positive communication with both my team and co-workers.
+
+6.Specify your weakness?
+I sometimes struggle to say no because I love helping others, but sometimes this good habit can get me 
+in trouble in the end.
+
+7. What motivates you to do a good job?
+I do my best at work because it helps my family and me. I have goals, and doing well at my job is a big 
+part of reaching them.
+
+8.What is your salary expectations?
+As a fresher in IT, I seek a salary in line with industry standards for entry-level roles. While compensation 
+is important, I prioritize gaining hands-on experience, learning, and contributing to projects. I’m open to 
+a fair salary reflecting my skills, and I’m excited about the growth opportunities and mentorship your 
+company offers.
+
+9.Tell me about your achievements.
+While I may not have specific formal achievements to share, I am proud of my consistent dedication and 
+commitment to delivering high-quality work. In my previous roles, I have effectively collaborated with 
+team members, demonstrated strong problem-solving skills, and consistently met deadlines. I’m eager to 
+leverage my skills and contribute actively to new challenges and opportunities within your organization.
+
+10.Where else have you applied?
+Actively pursuing roles aligning with my skills and goals, your company in IT Sectors stands out among 
+my top choices. I’m captivated by values or innovation. Confident that my skills align well with the 
+Frontend Developer, I’m eager about the opportunity to contribute to your team and its success.
+
+11.If given a choice would you like to work in a team or standalone?
+I value both teamwork and independent work for success. In my previous experiences, I’ve enjoyed 
+collaborating with team members, pooling our strengths and ideas to accomplish shared goals.
+Simultaneously, I’ve managed independent tasks, showcasing adaptability and organizational skills. Eager 
+to contribute flexibly based on the team’s and company’s goals.
+
+12.What are your expectations from the company?
+I seek a company aligning with my career goals, fostering growth and collaboration in an inclusive 
+environment. I value continuous learning, meaningful projects, and a work-life balance for a sustainable 
+professional journey.
+
+13.What makes you angry?
+I don’t get angry often, but it might happen if there’s a communication problem or something seems 
+unfair. I prefer solving issues calmly and finding solutions instead of getting angry.
+
+14.Tell me about your hobbies.
+I really like going to new places and traveling. It helps me learn about different cultures and keeps me 
+open-minded. I find inspiration in my travels, and I think it brings a positive influence to my work by 
+making me more creative.
+
+15.Where do you see yourself five years down the line?
+In the next five years, I want a more important job where I can lead. I aim to help the company grow by 
+using my skills and learning more. I’ll work hard to make a positive impact on the team and contribute to 
+the company’s success.
+
+16.Are you comfortable extending your work timings and work over weekends?
+I am open to occasionally extending work hours or working over weekends when it's necessary to meet 
+deadlines or address urgent tasks. I understand the importance of completing projects on time and I'll 
+make sure to balance it with my regular schedule.
+
+17.How long would you work for us if hired?
+I plan to work here for a long time if given the opportunity. I want to grow with the company and be a 
+valuable part of the team. I’m looking for a stable and lasting connection where I can contribute and help 
+the company succeed.
+
+18.Can you work under pressure or deadlines?
+I’m good at handling pressure and meeting deadlines. In my past jobs, I made things easier by breaking 
+tasks into smaller parts and prioritizing well. For example, in a tight deadline project, I worked with my 
+team, shared tasks smartly, and kept communication clear to reach our goal. This improved my problemsolving skills and taught me to be flexible with time. I’m confident in handling pressure, staying 
+organized, and delivering good work even in tough situations. Doing things independently has always 
+been my strength.
+
+19.Why should I hire you?
+I’m just starting in the IT world, but I’ve got a understanding of the tech skills needed for this job. My 
+enthusiasm to learn and contribute is high, and I believe my fresh perspective can bring a positive vibe to 
+the team. I’m excited to start my career in IT, grow with the company, and show my dedication and hard 
+work.
+
+20.Would you be ready to relocate if hired?
+Yes, I’m willing to relocate for this position. I see it as an opportunity to fully invest in my role, contribute 
+effectively to the team, and align with the company’s goals. I’m open to embracing new environments 
+and challenges as part of my commitment to professional growth and contributing to the success of the 
+organization.
+
+21.Do you know anyone who works for us?
+No, I do not currently know anyone working for the company. My interest in your organization has grown 
+through my research, understanding its values, and speaking with individuals in the industry. If given the 
+chance, I’m excited to form new connections and contribute positively to the team.
