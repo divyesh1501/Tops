@@ -10,13 +10,15 @@ export default function Router() {
     return (
         <>
             <BrowserRouter>
-                <Header />
-                <Routes>
-                    <Route path='/' element={<HomePage />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/product' element={<Product />} />
-                </Routes>
-                <Footer />
+                <div className='mx-5'>
+                    <Header />
+                    <Routes>
+                        <Route path='/' element={<HomePage />} />
+                        <Route path='/about' element={<About />} />
+                        <Route path='/product' element={<Product />} />
+                    </Routes>
+                </div>
+                    <Footer />
             </BrowserRouter>
         </>
     )

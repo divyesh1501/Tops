@@ -32,6 +32,7 @@ export default function Product() {
       url: 'http://localhost:9999/product/getAll',
     })
       .then((res) => {
+        console.log("🚀 ~ .then ~ res:", res)
         setData(res?.data?.data);
       })
       .catch((err) => {
@@ -98,10 +99,15 @@ export default function Product() {
     toggle()
   }
 
+  const resetForm = () => {
+    setProductData(initialData)
+    toggle()
+  }
+
   return (
     <>
       <ProductModal productData={productData} modal={modal} toggle={toggle} updateHandler={updateHandler} submitHandler={submitHandler} />
-      <TableData toggle={toggle} reFetchData={reFetchData} productData={data} editHandler={editHandler} deleteHandler={deleteHandler} />
+      <TableData toggle={toggle} reFetchData={reFetchData} productData={data} editHandler={editHandler} deleteHandler={deleteHandler} resetForm={resetForm} />
     </>
   );
 }
