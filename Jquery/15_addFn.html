@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- add functions are : (1) append (2) prepend (3) before (4) after  -->
+
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+
+    <hr>
+    <h1> Hello Patel </h1>
+    <span> Hello Divyesh </span>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("h1").append("!!!!!")
+            })
+            $("#btn2").click(function(){
+                $("h1").prepend("!!!!!")
+            })
+            $("#btn3").click(function(){
+                $("span").before("!!!!!")
+            })
+            $("#btn4").click(function(){
+                $("span").after("!!!!!")
+            })
+    })
+    </script>
+    
+</body>
+</html>

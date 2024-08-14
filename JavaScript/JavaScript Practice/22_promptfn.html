@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prompt_fn(){
+            var user = prompt("Enter any value");
+            if (user == ""){
+            alert ("Enter Value")
+            }
+            else{
+                document.getElementById("msg").innerText = user
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- prompt take input frome user -->
+    <button onclick="prompt_fn()">Click Here</button>
+    <h1>Welcome, <Span id="msg"></Span></h1>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .image1{
+            background: url(image/i1.webp) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+        .image2{
+            background: url(image/i2.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+        .image3{
+            background: url(image/i3.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+        .image4{
+            background: url(image/i4.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <div class="bxslider">
+        <div class="image1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="image2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="image4">
+            <h1>Image 3</h1>
+        </div>
+        <div class="image4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- bxslider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".bxslider").bxSlider()
+        })
+    </script>
+</body>
+</html>

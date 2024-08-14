@@ -14,7 +14,6 @@ const initialData = {
   discountPercentage: "0",
   color: [],
   size: [],
-
 }
 
 export default function Product() {

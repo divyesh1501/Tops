@@ -1,0 +1,18 @@
+bootstrap4 total 5 tiers (5 breakpoints)
+bootstrap5 has total 6 tiers (6 breakpoints)
+
+breakpoint 
+
+css code                     bootstrap 
+(max-width:576px)               -      xs screen
+(min-width:576px)               sm     small screen 
+(min-width:768px)               md     medium screen 
+(min-width:992px)               lg     large screen 
+(min-width:1200px)              xl     extra large 
+(min-width:1400px)              xxl    extra extra large screen 
+
+powerful gridsystem  (like table form)
+= row class 
+= col class 
+
+there is total 12 column system 

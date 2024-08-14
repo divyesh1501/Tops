@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var link = "https://github.com/"
+        var close_link;
+
+        function openfn(){
+            close_link = window.open(link)
+        }
+        function closefn(){
+            close_link.window.close()
+        }
+        function frwdfn(){
+            window.history.forward()
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openfn()">Open</button>
+    <button onclick="closefn()">Close</button>
+    <button onclick="frwdfn()">Forward</button>
+
+</body>
+</html>

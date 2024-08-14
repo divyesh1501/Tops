@@ -1,0 +1,17 @@
+in window object there is 5 function
+
+(1) alert()
+(2) confirm()
+(3) prompt()
+(4) open()
+(5) close()
+
+alert(), confirm() and prompt() also called popup boxes
+
+in history object there is 3 function 
+
+(1) go()
+(2) back()
+(3) forward()
+
+in navigator and screen there are properties are given.

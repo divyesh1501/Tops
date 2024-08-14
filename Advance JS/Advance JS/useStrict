@@ -1,0 +1,11 @@
+"use strict"
+let a = 230
+console.log("a:", a)
+
+{
+    {
+        const b = 20
+    }
+    b = 40
+    console.log("🚀 ~ file: useStrict:8 ~ b:", b)
+}

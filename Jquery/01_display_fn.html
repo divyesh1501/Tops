@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- display function mainly worked on hieght and width -->
+
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggele</button>
+
+    <hr>
+
+    <div class="head1">Hello World</div>
+    <div class="head2">Hello World</div>
+
+    <!-- offline package cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".head1").hide(2000)
+            })
+            
+            $("#btn2").click(function(){
+                $(".head1").show(2000)
+            })
+            $("#btn3").click(function(){
+                $(".head2").toggle(2000)
+            })
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img1{
+            height: 600px;
+            width: 100%;
+            border-radius: 0 50% 50% 0;
+        }
+        .img2{
+            height: 600px;
+            width: 100%;
+            border-radius: 50% 0 0 50%;
+        }
+        .imgbox{
+            display: flex;
+            background-color: rgba(142, 207, 209, 0.742);
+        }
+        .imgbox .image{
+            flex: 1;
+        }
+        .imgbox .aboutimg{
+            flex: 1;
+            display: grid;
+            place-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bxslider">
+        <div class="imagebox">
+            <div class="imgbox">
+                <div class="image">
+                    <img src="image/i1.webp" alt="" class="img1">
+                </div>
+                <div class="aboutimg">
+                    <h1>Image 1</h1>
+                </div>
+            </div>
+        </div>
+        <div class="imagebox">
+            <div class="imgbox">
+                <div class="image">
+                    <img src="image/i2.jpg" alt="" class="img2">
+                </div>
+                <div class="aboutimg">
+                    <h1>Image 2</h1>
+                </div>
+            </div>
+        </div>
+        <div class="imagebox">
+            <div class="imgbox">
+                <div class="image">
+                    <img src="image/i3.jpg" alt="" class="img1">
+                </div>
+                <div class="aboutimg">
+                    <h1>Image 3</h1>
+                </div>
+            </div>
+        </div>
+        <div class="imagebox">
+            <div class="imgbox">
+                <div class="image">
+                    <img src="image/i4.jpg" alt="" class="img2">
+                </div>
+                <div class="aboutimg">
+                    <h1>Image 4</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- bxslider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".bxslider").bxSlider()
+        })
+    </script>
+</body>
+</html>

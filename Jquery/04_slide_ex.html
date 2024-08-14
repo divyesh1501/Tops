@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .regpage {
+            display: none;
+            border: 2px solid black;
+            height: auto;
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .passlabel {
+            align-items: unset;
+        }
+
+        input[type="text"],
+        [type="date"],
+        [type="password"] {
+            height: 22px;
+            width: 250px;
+            padding: 0px 5px;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: rgb(7, 32, 7);
+            color: white;
+            border: 2px solid rgb(7, 32, 7);
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Toggle</button>
+    <button id="btn2">FadeToggle</button>
+    <button id="btn3">SlideToggle</button>
+
+    <hr>
+    <div class="regpage">
+        <h3>Registration page</h3>
+        <form action="#">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Firstname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="firstname" id="fname" onblur="return check_blank_value(this, 'msg')"
+                        onkeyup="return name_expression(this, 'msg')">
+                </div>
+                <div class="col">
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- Lastname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Lastname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="lastname" id="lname" onblur="return check_blank_value(this, 'msg1')"
+                        onkeyup="return name_expression(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+            <!-- date of birth -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Birthdate</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="dob" id="dob" onblur="return check_blank_value(this, 'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+            <!-- gender -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                </div>
+                <div class="col">
+                    <span id="msg3"></span>
+                </div>
+            </div>
+            <!-- address -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Address</label>
+                </div>
+                <div class="col">
+                    <textarea name="addr" id="addr" cols="35" rows="3" onblur="return check_blank_value(this, 'msg4')"
+                        onkeyup="return addressLength()" placeholder="enter 50 to 250 character"
+                        maxlength="250"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4"></span>
+                </div>
+            </div>
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Mobile no</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="mno" onblur="return check_blank_value(this, 'msg5')"
+                        onkeyup="return number_expression(this, 'msg5')" maxlength="10">
+                </div>
+                <div class="col">
+                    <span id="msg5"></span>
+                </div>
+            </div>
+            <!-- email id -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Email</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="mail" onblur="return check_blank_value(this, 'msg6')"
+                        onkeyup="return email_ex() ">
+                </div>
+                <div class=" col">
+                    <span id="msg6"></span>
+                </div>
+            </div>
+            <!-- password -->
+            <div class="row passlabel">
+                <div class="col">
+                    <label for="">Password</label>
+                </div>
+                <div class="col">
+                    <input type="password" id="pass" onblur="return check_blank_value(this, 'msg7')"
+                        onkeyup="return passExpression()" maxlength="12">
+                    <small>password must be in uppercase, lowercase, spacial character and digits</small>
+                </div>
+                <div class=" col">
+                    <span id="msg7"></span>
+                </div>
+            </div>
+            <!-- confirm password -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Confirm Password</label>
+                </div>
+                <div class="col">
+                    <input type="password" id="cpass" onblur="return check_blank_value(this, 'msg8')"
+                        onkeyup="return passcompare()">
+                </div>
+                <div class=" col">
+                    <span id="msg8"></span>
+                </div>
+            </div>
+            <!-- show password -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <input type="checkbox" onclick="showpass()">
+                    <label for="">Show Password</label>
+                </div>
+                <div class=" col"></div>
+            </div>
+            <!-- btn -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button type="submit" onclick="return check_form()">Submit </button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".regpage").toggle(2000)
+            })
+            $("#btn2").click(function () {
+                $(".regpage").fadeToggle(2000)
+            })
+            $("#btn3").click(function () {
+                $(".regpage").slideToggle(2000)
+            })
+        })
+    </script>
+</body>
+
+</html>

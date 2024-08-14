@@ -59,7 +59,7 @@ export default function ApiData() {
             </div> */}
 
             {/* get limited data */}
-            {/* <div>
+            <div>
                 {
                     limitinfo.data.map((PostApi, i) =>
                         <div className='border border-2 border-black m-5 p-3' key={i}>
@@ -68,10 +68,10 @@ export default function ApiData() {
                         </div>
                     )
                 }
-            </div> */}
+            </div>
 
             {/* delete data */}
-            {/* <div>
+            <div>
                 {
                     info.data.map((PostApi, i) =>
                         <div className='border border-2 border-black m-5 p-3' key={i}>
@@ -81,10 +81,10 @@ export default function ApiData() {
                         </div>
                     )
                 }
-            </div> */}
+            </div>
 
             {/* create data */}
-            {/* <div >
+            <div >
                 <Button className='ms-5 mt-5' onClick={() => { createPost(newPost) }}>Create Post</Button>
                 {
                     info.data.map((PostApi, i) =>
@@ -95,7 +95,7 @@ export default function ApiData() {
                         </div>
                     )
                 }
-            </div> */}
+            </div>
 
             {/* update data */}
 

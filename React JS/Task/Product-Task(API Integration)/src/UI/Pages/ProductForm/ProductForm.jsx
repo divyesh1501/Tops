@@ -101,7 +101,6 @@ export default function ProductForm({ toggle, productData, updateHandler, submit
                                 colorArry.map((e, i) => {
                                     return (
                                         <div key={i} style={{ display: "flex", gap: "5px", alignItems: 'center', flexDirection: "row" }}>
-
                                             <Input
                                                 id="exampleSelect"
                                                 name="select"

@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <script language="JavaScript">
+    <!--
+    var counter = 0;
+
+    function comeBack(){
+      document.myForm.mySelect1.focus();
+      document.myForm.counter.value = counter++;
+    }
+    -->
+    </script>
+    </head>
+    <body onLoad='comeBack()'>
+    <form name="myForm">
+      <select name="mySelect1" multiple onBlur='comeBack()'>
+        <option value=A>AA</option>
+        <option value=B>BB</option>
+        <option value=C>CC</option>
+        <option value=D>DD</option>
+      </select>
+      <br>
+      <select name="mySelect2" multiple>
+        <option value=E>EE</option>
+        <option value=F>FF</option>
+        <option value=G>GG</option>
+        <option value=H>HH</option>
+      </select>
+      <input type=TEXT size=2 value="" name="counter">
+    </form>
+    </body>
+    </html>

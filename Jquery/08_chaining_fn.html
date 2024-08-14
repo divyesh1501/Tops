@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <div id="div1"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#div1").fadeOut(500).slideDown(500).slideUp(500).fadeIn(500)
+            })
+        })
+    </script>
+</body>
+</html>
